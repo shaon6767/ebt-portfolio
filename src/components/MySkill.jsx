@@ -5,7 +5,7 @@ import pen from"../assets/pen.svg"
 
 const SkillsSection = () => {
   return (
-    <section className="w-full bg-neutral-100 py-24 px-6 md:px-16">
+    <section className="w-full bg-neutral-100 dark:bg-black py-24 px-6 md:px-16">
       <div className="max-w-7xl mx-auto">
         <p className="text-sm tracking-widest text-red-500 mb-4">MY SKILL</p>
 

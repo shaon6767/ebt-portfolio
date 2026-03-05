@@ -6,7 +6,7 @@ import { MoveUpRight } from 'lucide-react';
 
 const Portfolio = () => {
     return (
-        <div className="bg-gray-100 py-20 px-4">
+        <div className="bg-gray-100 dark:bg-black py-20 px-4">
             <div className="max-w-7xl mx-auto">
 
                 <div className="text-center mb-16">

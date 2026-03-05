@@ -36,16 +36,16 @@ const Experience = () => {
   ];
 
   return (
-    <section className="py-20 mt-[100px] px-6 md:px-16 transition-colors duration-500">
+    <section className="py-8 lg:py-20 mt-8 md:mt-12 lg:mt-[100px] px-6 md:px-16 transition-colors duration-500">
       <div className="max-w-7xl mx-auto grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
         {Experience.map((item, index) => (
           <div
             key={index}
-            className="bg-white border border-red-200 dark:border-red-500/20 rounded-3xl p-10 text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
+            className="bg-white dark:bg-black border border-red-200 dark:border-red-500/20 dark:text-white rounded-3xl p-10 text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
           >
             <div className="flex justify-center mb-6">{item.icon}</div>
 
-            <h3 className="text-lg font-semibold ">
+            <h3 className="text-lg font-semibold">
               {item.title}
             </h3>
 

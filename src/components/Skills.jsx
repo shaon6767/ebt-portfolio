@@ -17,10 +17,10 @@ const skillsRight = [
 const SkillBar = ({ name, percent, animate }) => (
   <div className="mb-8">
     <div className="flex justify-between mb-2">
-      <span className="text-sm tracking-widest text-gray-700">
+      <span className="text-sm tracking-widest text-gray-700 dark:text-white">
         {name}
       </span>
-      <span className="text-sm font-medium text-gray-700">
+      <span className="text-sm font-medium text-gray-700 dark:text-white">
         {percent}%
       </span>
     </div>
@@ -75,7 +75,7 @@ const Skills = () => {
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16">
         
         <div>
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-10">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-10">
             Design Skill
           </h2>
           {skillsLeft.map((skill, index) => (
@@ -88,7 +88,7 @@ const Skills = () => {
         </div>
 
         <div>
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-10">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-10">
             Development Skill
           </h2>
           {skillsRight.map((skill, index) => (

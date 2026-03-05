@@ -6,7 +6,7 @@ import { ChevronRight } from 'lucide-react';
 
 const Blog = () => {
   return (
-    <div className="w-full bg-neutral-100 py-16 px-6 md:px-16">
+    <div className="w-full bg-neutral-100 dark:bg-black py-16 px-6 md:px-16">
 
       <div className="max-w-7xl mx-auto text-center">
         <p className="text-xs tracking-widest text-red-500 mb-3">OUR TESTIMONIAL</p>
@@ -68,14 +68,14 @@ const Blog = () => {
 
         <p className="text-xs tracking-widest text-red-500 mb-3">BLOG AND NEWS</p>
 
-        <h2 className="text-3xl md:text-4xl font-bold mb-12">
+        <h2 className="text-3xl md:text-4xl dark:text-white font-bold mb-12">
           Elevating Personal Branding the <br className="hidden md:block"/> through Powerful Portfolios
         </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
           {/* Blog Card 1 */}
-          <div className="bg-white rounded-2xl shadow-sm overflow-hidden text-left">
+          <div className="bg-white p-2 rounded-2xl shadow-sm overflow-hidden text-left">
 
             <img
               src={one}
@@ -97,7 +97,7 @@ const Blog = () => {
 
 
           {/* Blog Card 2 */}
-          <div className="bg-white rounded-2xl shadow-sm overflow-hidden text-left">
+          <div className="bg-white p-2 rounded-2xl shadow-sm overflow-hidden text-left">
 
             <img
               src={three}
@@ -118,7 +118,7 @@ const Blog = () => {
           </div>
 
 
-          <div className="bg-white rounded-2xl shadow-sm overflow-hidden text-left">
+          <div className="bg-white p-2 rounded-2xl shadow-sm overflow-hidden text-left">
 
             <img
               src={two}

@@ -1,8 +1,8 @@
 const Text = () => {
   return (
-    <div className="container">
+    <div className="container hidden md:block">
          <div className="relative">
-            <div className="absolute bottom-[-50px] left-40 -z-10">
+            <div className="absolute bottom-[-50px] left-40">
               <h1 className="outline-title text-white pb-2 text-[160px] font-bold text-center">
                 WEB DESIGN
               </h1>
