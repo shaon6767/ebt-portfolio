@@ -1,9 +1,9 @@
-import { MoveRight, Instagram, Linkedin, Twitter, Facebook, MessageCircle  } from 'lucide-react';
+import { MoveRight, Instagram, Linkedin, Twitter, Facebook, MessageCircle } from 'lucide-react';
 import ban from "../assets/banner.png"
 
 const Banner = () => {
   return (
-    <section>
+    <section className='dark:bg-gray-800 dark:text-white'>
       <div className='container'>
         <div className="grid grid-cols-5">
           <div className="col-span-1 space-y-4">
@@ -18,7 +18,7 @@ const Banner = () => {
           </div>
           <div className="col-span-3">
             <div className="flex justify-center">
-              <img src={ban} alt="" className=''/>
+              <img src={ban} alt="" className='' />
             </div>
           </div>
           <div className="col-span-1 mt-[200px] space-y-5">
@@ -42,7 +42,7 @@ const Banner = () => {
       </div>
 
       <div className="fixed right-3 bottom-5">
-        <MessageCircle size={36} className='text-red-600'/>
+        <MessageCircle size={36} className='text-red-600' />
       </div>
     </section>
   )

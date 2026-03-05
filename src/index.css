@@ -1,9 +1,14 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
 
 @layer utilities{
   .container{
     @apply max-w-[1290px] mx-auto;
   }
+}
+
+@theme {
+  --font-rajdhani: "Rajdhani", sans-serif;
 }
 
 .outline-title {
@@ -20,3 +25,5 @@
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
+
+@custom-variant dark (&:where(.dark, .dark *));
