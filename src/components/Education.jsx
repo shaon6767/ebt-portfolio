@@ -1,17 +1,17 @@
 import con from "../assets/Container.png"
-import one from "../assets/linear.png"
-import two from "../assets/framer.png"
-import three from "../assets/notion.png"
-import four from "../assets/slack.png"
-import five from "../assets/medium.png"
-import six from "../assets/upwork.png"
-import seven from "../assets/amazon.png"
-import eight from "../assets/asana.png"
+import one from "../assets/linear.svg"
+import two from "../assets/framer.svg"
+import three from "../assets/notion.svg"
+import four from "../assets/slack.svg"
+import five from "../assets/medium.svg"
+import six from "../assets/upwork.svg"
+import seven from "../assets/amazon.svg"
+import eight from "../assets/asana.svg"
 
 const Education = () => {
   return (
     <div className=" py-20 px-4">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-7xl mx-auto">
 
         {/* ================= EDUCATION SECTION ================= */}
         <h2 className="text-2xl font-bold text-gray-800 mb-10">
@@ -77,24 +77,24 @@ const Education = () => {
             </h2>
 
             <div className="mb-20">
-              <p className="text-red-500 text-xs uppercase">Experience</p>
-              <h4 className="font-semibold text-lg mt-1">
+              <p className="text-red-500 text-lg">experience</p>
+              <h4 className="font-semibold text-xl mt-1">
                 Fatima Asrafy
               </h4>
-              <p className="text-sm text-gray-500">UI/UX Designer</p>
-              <p className="text-gray-500 text-sm mt-3">
+              <p className="text-md mt-1">UI/UX Designer</p>
+              <p className="text-sm mt-4 w-[400px]">
                 Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur.
+cillum desi dolore eu fugiat nulla pariatu Duis aute irure
               </p>
             </div>
 
             <div>
-              <p className="text-red-500 text-xs uppercase">Experience</p>
-              <h4 className="font-semibold text-lg mt-1">
+              <p className="text-red-500 text-lg">experience</p>
+              <h4 className="font-semibold text-xl mt-1">
                 Fatima Asrafy
               </h4>
-              <p className="text-sm text-gray-500">UI/UX Designer</p>
-              <p className="text-gray-500 text-sm mt-3">
+              <p className="text-md mt-1">UI/UX Designer</p>
+              <p className=" text-sm mt-4 w-[400px]">
                 Interested in working together? Let's bring your ideas to life.
                 Hit Contact me, and let's start building something.
               </p>
@@ -103,41 +103,39 @@ const Education = () => {
 
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-20">
+        <div className="grid grid-cols-2 md:grid-cols-4 mt-28 gap-0 p-0 m-0">
+  <div className="flex justify-center items-center p-0 m-0">
+    <img src={one} alt="Brand 1" className="cursor-pointer border-2 border-[#9F9F9F] p-10 block w-full h-full" />
+  </div>
 
-          <div className="flex justify-center items-center">
-            <img src={one} alt="Brand 1" className="cursor-pointer" />
-          </div>
+  <div className="flex justify-center items-center p-0 m-0">
+    <img src={two} alt="Brand 2" className="cursor-pointer border-2 border-[#9F9F9F] p-10 block w-full h-full" />
+  </div>
 
-          <div className="flex justify-center items-center">
-            <img src={two} alt="Brand 2" className="cursor-pointer" />
-          </div>
+  <div className="flex justify-center items-center p-0 m-0">
+    <img src={three} alt="Brand 3" className="cursor-pointer border-2 border-[#9F9F9F] p-10 block w-full h-full" />
+  </div>
 
-          <div className="flex justify-center items-center">
-            <img src={three} alt="Brand 3" className="cursor-pointer" />
-          </div>
+  <div className="flex justify-center items-center p-0 m-0">
+    <img src={four} alt="Brand 4" className="cursor-pointer border-2 border-[#9F9F9F] p-10 block w-full h-full" />
+  </div>
 
-          <div className="flex justify-center items-center">
-            <img src={four} alt="Brand 4" className="cursor-pointer" />
-          </div>
+  <div className="flex justify-center items-center p-0 m-0">
+    <img src={five} alt="Brand 5" className="cursor-pointer border-2 border-[#9F9F9F] p-10 block w-full h-full" />
+  </div>
 
-          <div className="flex justify-center items-center">
-            <img src={five} alt="Brand 5" className="cursor-pointer" />
-          </div>
+  <div className="flex justify-center items-center p-0 m-0">
+    <img src={six} alt="Brand 6" className="cursor-pointer border-2 border-[#9F9F9F] p-10 block w-full h-full" />
+  </div>
 
-          <div className="flex justify-center items-center">
-            <img src={six} alt="Brand 6" className="cursor-pointer" />
-          </div>
+  <div className="flex justify-center items-center p-0 m-0">
+    <img src={seven} alt="Brand 7" className="cursor-pointer border-2 border-[#9F9F9F] p-10 block w-full h-full" />
+  </div>
 
-          <div className="flex justify-center items-center">
-            <img src={seven} alt="Brand 7" className="cursor-pointer" />
-          </div>
-
-          <div className="flex justify-center items-center">
-            <img src={eight} alt="Brand 8" className="cursor-pointer" />
-          </div>
-
-        </div>
+  <div className="flex justify-center items-center p-0 m-0">
+    <img src={eight} alt="Brand 8" className="cursor-pointer border-2 border-[#9F9F9F] p-10 block w-full h-full" />
+  </div>
+</div>
       </div>
     </div>
   );

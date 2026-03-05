@@ -2,10 +2,9 @@ import { CircleCheck } from 'lucide-react';
 
 const Plans = () => {
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center px-4 py-16">
-      <div className="max-w-6xl w-full">
+    <div className="min-h-screen flex items-center justify-center px-4 py-16">
+      <div className="max-w-7xl w-full">
         
-        {/* Header */}
         <div className="text-center mb-12">
           <p className="text-red-500 uppercase tracking-widest text-sm font-semibold">
             My Price Plan
@@ -16,11 +15,9 @@ const Plans = () => {
           </h2>
         </div>
 
-        {/* Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           
-          {/* Starter */}
-          <div className="bg-white rounded-2xl shadow-md border-2 border-[white] hover:border-red-600 p-8 flex flex-col justify-between hover:shadow-xl hover:scale-105 transition-all ease-in-out duration-300 cursor-pointer">
+          <div className="bg-neutral-100 rounded-2xl shadow-md border-r-2 border-b-2 border-[white] hover:border-red-600 p-8 flex flex-col justify-between hover:shadow-xl hover:scale-105 transition-all ease-in-out duration-300 cursor-pointer">
             <div>
               <h3 className="text-lg font-semibold text-gray-700 mb-4">
                 Starter
@@ -42,8 +39,7 @@ const Plans = () => {
             </button>
           </div>
 
-          {/* Basic (Highlighted) */}
-          <div className="bg-white rounded-2xl shadow-md border-2 border-[white] hover:border-red-600 p-8 flex flex-col justify-between hover:shadow-xl hover:scale-105 transition-all ease-in-out duration-300 cursor-pointer">
+          <div className="bg-neutral-100 rounded-2xl shadow-md border-r-2 border-b-2 border-[white] hover:border-red-600 p-8 flex flex-col justify-between hover:shadow-xl hover:scale-105 transition-all ease-in-out duration-300 cursor-pointer">
             <div>
               <h3 className="text-lg font-semibold text-gray-700 mb-4">
                 Basic
@@ -67,8 +63,7 @@ const Plans = () => {
             </button>
           </div>
 
-          {/* Premium */}
-          <div className="bg-white rounded-2xl shadow-md border-2 border-[white] hover:border-red-600 p-8 flex flex-col justify-between hover:shadow-xl hover:scale-105 transition-all ease-in-out duration-300 cursor-pointer">
+          <div className="bg-neutral-100 rounded-2xl shadow-md border-r-2 border-b-2 border-[white] hover:border-red-600 p-8 flex flex-col justify-between hover:shadow-xl hover:scale-105 transition-all ease-in-out duration-300 cursor-pointer">
             <div>
               <h3 className="text-lg font-semibold text-gray-700 mb-4">
                 Premium

@@ -26,7 +26,7 @@ const Service = () => {
           
           <div className="space-y-8">
             
-            <div className="bg-gray-100 rounded-2xl p-8 border-r-2 border-b-2 border-r-[#f7f3f3] border-b-[#f7f3f3] hover:border-r-[red] hover:border-b-[red] hover:scale-105 shadow-lg transition-all ease-in-out duration-200">
+            <div className="bg-gray-100 rounded-2xl p-8 border-b-2 border-r-2 border-red-500 hover:scale-105 shadow-lg transition-all ease-in-out duration-200">
               <h3 className="text-lg font-bold text-gray-900">
                 01. A Portfolio of Creativity
               </h3>
@@ -36,7 +36,7 @@ const Service = () => {
               </p>
             </div>
 
-            <div className="bg-gray-100 rounded-2xl p-8 border-r-2 border-b-2 border-r-[#f7f3f3] border-b-[#f7f3f3] hover:border-r-[red] hover:border-b-[red] hover:scale-105 shadow-lg transition-all ease-in-out duration-200">
+            <div className="bg-gray-100 rounded-2xl p-8 border-b-2 border-r-2 border-red-500 hover:scale-105 shadow-lg transition-all ease-in-out duration-200">
               <h3 className="text-lg font-bold text-gray-900">
                 02. My Portfolio of Innovation
               </h3>
@@ -47,7 +47,7 @@ const Service = () => {
             </div>
 
 
-            <div className="bg-gray-100 rounded-2xl p-8 border-r-2 border-b-2 border-r-[#f7f3f3] border-b-[#f7f3f3] hover:border-r-[red] hover:border-b-[red] hover:scale-105 shadow-lg transition-all ease-in-out duration-200">
+            <div className="bg-gray-100 rounded-2xl p-8 border-b-2 border-r-2 border-red-500 hover:scale-105 shadow-lg transition-all ease-in-out duration-200">
               <h3 className="text-lg font-bold text-gray-900">
                 03. A Showcase of My Projects
               </h3>

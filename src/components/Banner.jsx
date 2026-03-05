@@ -18,17 +18,7 @@ const Banner = () => {
           </div>
           <div className="col-span-3">
             <div className="flex justify-center">
-              <img src={ban} alt="" className='relative'/>
-            </div>
-              <div className="absolute bottom-[-150px] left-90 -z-10">
-              <h1 className="outline-title text-white pb-2 text-[160px] font-bold text-center">
-                WEB DESIGN
-              </h1>
-            </div>
-            <div className="absolute bottom-[-180px] left-135">
-              <h1 className="outline-title-two text-white pb-2 text-[100px] font-bold text-center">
-                WEB DESIGN
-              </h1>
+              <img src={ban} alt="" className=''/>
             </div>
           </div>
           <div className="col-span-1 mt-[200px] space-y-5">
@@ -51,7 +41,7 @@ const Banner = () => {
         </div>
       </div>
 
-      <div className="absolute right-3 bottom-5">
+      <div className="fixed right-3 bottom-5">
         <MessageCircle size={36} className='text-red-600'/>
       </div>
     </section>
