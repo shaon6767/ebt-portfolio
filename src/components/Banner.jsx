@@ -13,7 +13,7 @@ const Banner = () => {
   return (
     <section className='dark:bg-black dark:text-white relative overflow-hidden py-10 md:py-0 font-rajdhani'>
 
-      <div className='container px-4 md:px-0'>
+      <div className='max-w-7xl px-4 mx-auto'>
 
         {/* Desktop Grid Layout */}
         <div className="hidden md:grid grid-cols-5 gap-4">
