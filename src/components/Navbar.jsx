@@ -50,7 +50,7 @@ const Navbar = () => {
               <Facebook size={34} className="p-2 bg-gray-200 dark:bg-gray-700 rounded-full dark:text-white hover:bg-red-500 hover:text-white transition-all cursor-pointer ease-in-out"/>
               <button
                 onClick={toggleTheme}
-                className="p-2 rounded-lg bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors"
+                className="p-2 rounded-lg bg-gray-200 dark:bg-gray-700 hover:bg-gray-500 dark:hover:bg-gray-800 transition-colors"
                 aria-label="Toggle theme"
               >
                 {isDarkMode ? <Sun size={20}/> : <Moon size={20}/>}

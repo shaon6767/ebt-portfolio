@@ -6,7 +6,7 @@ import { MoveUpRight } from 'lucide-react';
 
 const Portfolio = () => {
     return (
-        <div className="bg-gray-100 dark:bg-black py-20 px-4">
+        <div className="bg-gray-100 dark:bg-black py-8 lg:py-20 px-4">
             <div className="max-w-7xl mx-auto">
 
                 <div className="text-center mb-16">
@@ -14,7 +14,7 @@ const Portfolio = () => {
                         Latest Portfolio
                     </p>
 
-                    <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mt-3">
+                    <h2 className="text-3xl md:text-4xl font-bold mt-3">
                         Transforming Ideas into Exceptional
                     </h2>
 
@@ -26,9 +26,9 @@ const Portfolio = () => {
                 </div>
 
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-10 space-y-16">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-10 space-y-6 lg:space-y-16">
                     <div className="">
-                        <div className="bg-white rounded-2xl p-4 shadow-md">
+                        <div className="bg-white rounded-2xl p-6 shadow-md">
                             <div className="rounded-xl overflow-hidden">
                                 <img
                                     src={one}
@@ -55,7 +55,7 @@ const Portfolio = () => {
 
 
                     <div className="">
-                        <div className="bg-white rounded-2xl p-4 shadow-md md:mt-18">
+                        <div className="bg-white rounded-2xl p-6 shadow-md md:mt-18">
                             <div className="rounded-xl overflow-hidden">
                                 <img
                                     src={two}
@@ -81,7 +81,7 @@ const Portfolio = () => {
                     </div>
 
                     <div className="">
-                        <div className="bg-white rounded-2xl p-4 shadow-md md:-mt-18">
+                        <div className="bg-white rounded-2xl p-6 shadow-md md:-mt-18">
                             <div className="rounded-xl overflow-hidden">
                                 <img
                                     src={three}
@@ -109,7 +109,7 @@ const Portfolio = () => {
 
 
                     <div className="">
-                        <div className="bg-white rounded-2xl p-4 shadow-md">
+                        <div className="bg-white rounded-2xl p-6 shadow-md">
                             <div className="rounded-xl overflow-hidden">
                                 <img
                                     src={four}

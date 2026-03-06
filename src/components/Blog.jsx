@@ -18,13 +18,13 @@ const Blog = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 
           {/* Card 1 */}
-          <div className="bg-neutral-200 p-8 rounded-2xl shadow-sm border-r-2 border-red-500 text-left space-y-12 hover:scale-105 duration-150 ease-in-out transition-all">
+          <div className="bg-neutral-200 dark:bg-[#141414] p-8 rounded-2xl shadow-sm border-r-2 border-red-500 dark:border-none  text-left space-y-12 hover:scale-105 duration-150 ease-in-out transition-all">
            <div className="">
             <img src={test} alt="" />
            </div>
 
            <div className="">
-             <p className="text-gray-600 mb-6">
+             <p className=" mb-6">
               A personal portfolio is a curated collection of an individual's
               professional work, showcasing their skills. A personal portfolio
               is a curated collection of an individual's professional work
@@ -34,18 +34,18 @@ const Blog = () => {
 
             <div>
               <p className="font-semibold">Cameron Williamson</p>
-              <p className="text-sm text-gray-500">UX/UI Designer</p>
+              <p className="text-sm ">UX/UI Designer</p>
             </div>
           </div>
 
           {/* Card 2 */}
-          <div className="bg-neutral-200 p-8 rounded-2xl shadow-sm border-r-2 border-red-500 text-left space-y-12 hover:scale-105 duration-150 ease-in-out transition-all">
+          <div className="bg-neutral-200 dark:bg-[#141414] p-8 rounded-2xl shadow-sm border-r-2 border-red-500 dark:border-none text-left space-y-12 hover:scale-105 duration-150 ease-in-out transition-all">
             <div className="">
             <img src={test} alt="" />
            </div>
 
            <div className="">
-             <p className="text-gray-600 mb-6">
+             <p className=" mb-6">
               A personal portfolio is a curated collection of an individual's
               professional work, showcasing their skills. A personal portfolio
               is a curated collection of an individual's professional work
@@ -55,7 +55,7 @@ const Blog = () => {
 
             <div>
               <p className="font-semibold">Leslie Alexander</p>
-              <p className="text-sm text-gray-500">UX/UI Designer</p>
+              <p className="text-sm ">UX/UI Designer</p>
             </div>
           </div>
 
@@ -75,7 +75,7 @@ const Blog = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
           {/* Blog Card 1 */}
-          <div className="bg-white p-2 rounded-2xl shadow-sm overflow-hidden text-left">
+          <div className="bg-white dark:bg-[#141414]  p-2 rounded-2xl shadow-sm overflow-hidden text-left">
 
             <img
               src={one}
@@ -97,7 +97,7 @@ const Blog = () => {
 
 
           {/* Blog Card 2 */}
-          <div className="bg-white p-2 rounded-2xl shadow-sm overflow-hidden text-left">
+          <div className="bg-white dark:bg-[#141414]  p-2 rounded-2xl shadow-sm overflow-hidden text-left">
 
             <img
               src={three}
@@ -118,7 +118,7 @@ const Blog = () => {
           </div>
 
 
-          <div className="bg-white p-2 rounded-2xl shadow-sm overflow-hidden text-left">
+          <div className="bg-white dark:bg-[#141414] p-2 rounded-2xl shadow-sm overflow-hidden text-left">
 
             <img
               src={two}

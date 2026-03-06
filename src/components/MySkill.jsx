@@ -2,6 +2,9 @@ import { ChevronRight } from "lucide-react";
 import house from"../assets/house.svg"
 import cal from"../assets/calender.svg"
 import pen from"../assets/pen.svg"
+import darkh from "../assets/darkhouse.svg"
+import darkc from "../assets/darlcal.svg"
+import darkp from "../assets/darkpen.svg"
 
 const SkillsSection = () => {
   return (
@@ -15,10 +18,11 @@ const SkillsSection = () => {
 
         <div className="flex flex-col gap-6">
 
-          {/* Item 1 */}
-          <div className="grid grid-cols-1 md:grid-cols-8 items-center gap-6 p-10 bg-neutral-200 hover:bg-red-500 shadow-lg hover:scale-105 transition-all ease-in-out duration-150 cursor-pointer">
-              <div className="col-span-1">
-                <img src={house} alt="" />
+
+          <div className="grid grid-cols-1 md:grid-cols-8 items-center gap-6 p-10 bg-neutral-200 dark:bg-black hover:bg-red-500 shadow-lg hover:scale-105 transition-all ease-in-out duration-150 cursor-pointer dark:border-b-1 dark:border-b-[white]">
+              <div className="col-span-1 flex justify-center">
+                <img src={house} alt="" className="block dark:hidden"/>
+                <img src={darkh} alt="" className="hidden dark:block"/>
               </div>
             <div className="md:col-span-2 flex items-center gap-4">
 
@@ -42,9 +46,10 @@ const SkillsSection = () => {
           </div>
 
           {/* Item 2 */}
-           <div className="grid grid-cols-1 md:grid-cols-8 items-center gap-6 p-10 bg-neutral-200 hover:bg-red-500 shadow-lg hover:scale-105 transition-all ease-in-out duration-150 cursor-pointer">
-              <div className="col-span-1">
-                <img src={cal} alt="" />
+           <div className="grid grid-cols-1 md:grid-cols-8 items-center gap-6 p-10 bg-neutral-200 dark:bg-black hover:bg-red-500 shadow-lg hover:scale-105 transition-all ease-in-out duration-150 cursor-pointer dark:border-b-1 dark:border-b-[white]">
+              <div className="col-span-1 flex justify-center">
+                <img src={cal} alt="" className="block dark:hidden"/>
+                <img src={darkc} alt="" className="hidden dark:block"/>
               </div>
             <div className="md:col-span-2 flex items-center gap-4">
 
@@ -68,9 +73,10 @@ const SkillsSection = () => {
           </div>
 
           {/* Item 3 */}
-          <div className="grid grid-cols-1 md:grid-cols-8 items-center gap-6 p-10 bg-neutral-200 hover:bg-red-500 shadow-lg hover:scale-105 transition-all ease-in-out duration-150 cursor-pointer">
-              <div className="col-span-1">
-                <img src={pen} alt="" />
+          <div className="grid grid-cols-1 md:grid-cols-8 items-center gap-6 p-10 bg-neutral-200 dark:bg-black hover:bg-red-500 shadow-lg hover:scale-105 transition-all ease-in-out duration-150 cursor-pointer dark:border-b-1 dark:border-b-[white]">
+              <div className="col-span-1 flex justify-center">
+                <img src={pen} alt="" className="block dark:hidden"/>
+                <img src={darkp} alt="" className="hidden dark:block"/>
               </div>
             <div className="md:col-span-2 flex items-center gap-4">
 

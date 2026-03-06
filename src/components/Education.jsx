@@ -7,22 +7,29 @@ import five from "../assets/medium.svg"
 import six from "../assets/upwork.svg"
 import seven from "../assets/amazon.svg"
 import eight from "../assets/asana.svg"
+import line from "../assets/line.svg"
 
 const Education = () => {
   return (
     <div className=" py-20 px-4">
       <div className="max-w-7xl mx-auto">
 
-        {/* ================= EDUCATION SECTION ================= */}
-        <h2 className="text-2xl font-bold text-gray-800 mb-10">
-          Education
-        </h2>
+        <div className="flex items-center gap-3 lg:gap-8 mb-4 lg:mb-10">
+          <div className="">
+            <h2 className="text-2xl font-bold">
+              Education
+            </h2>
+          </div>
+          <div className="hidden dark:block">
+            <img src={line} alt="" />
+          </div>
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 
-          {/* Card 1 */}
-          <div className="bg-[#F4F4F4] p-10 rounded-2xl shadow-md border-b-2 border-r-2 border-red-400">
-            <h4 className="text-sm text-gray-500">Trainer Marketing</h4>
+
+          <div className="bg-[#F4F4F4] space-y-4 dark:bg-[#141414] p-8 rounded-2xl shadow-md border-b-2 dark:border-none border-r-2 border-red-400">
+            <h4 className="text-sm text-black dark:text-white">Trainer Marketing</h4>
             <p className="text-sm font-semibold mt-1">2005-2009</p>
             <p className="text-gray-500 text-sm mt-4">
               A personal portfolio is a curated collection of an individual's
@@ -30,8 +37,7 @@ const Education = () => {
             </p>
           </div>
 
-          {/* Card 2 */}
-          <div className="bg-[#F4F4F4] p-10 rounded-2xl shadow-md border-b-2 border-r-2 border-red-400">
+          <div className="bg-[#F4F4F4] space-y-4 dark:bg-[#141414] p-8 rounded-2xl shadow-md border-b-2 dark:border-none border-r-2 border-red-400">
             <h4 className="text-sm text-gray-500">Assistant Director</h4>
             <p className="text-sm font-semibold mt-1">2010-2014</p>
             <p className="text-gray-500 text-sm mt-4">
@@ -40,8 +46,8 @@ const Education = () => {
             </p>
           </div>
 
-          {/* Card 3 */}
-          <div className="bg-[#F4F4F4] p-10 rounded-2xl shadow-md border-b-2 border-r-2 border-red-400">
+
+          <div className="bg-[#F4F4F4] space-y-4 dark:bg-[#141414] p-8 rounded-2xl shadow-md border-b-2 dark:border-none border-r-2 border-red-400">
             <h4 className="text-sm text-gray-500">Design Assistant</h4>
             <p className="text-sm font-semibold mt-1">2008-2012</p>
             <p className="text-gray-500 text-sm mt-4">
@@ -50,8 +56,8 @@ const Education = () => {
             </p>
           </div>
 
-          {/* Card 4 */}
-          <div className="bg-[#F4F4F4] p-10 rounded-2xl shadow-md border-b-2 border-r-2 border-red-400">
+
+          <div className="bg-[#F4F4F4] space-y-4 dark:bg-[#141414] p-8 rounded-2xl shadow-md border-b-2 dark:border-none border-r-2 border-red-400">
             <h4 className="text-sm text-gray-500">Design Assistant</h4>
             <p className="text-sm font-semibold mt-1">2008-2012</p>
             <p className="text-gray-500 text-sm mt-4">
@@ -72,9 +78,16 @@ const Education = () => {
           </div>
 
           <div className="">
-            <h2 className="text-2xl font-bold text-gray-800 mb-16">
-              Experiences
-            </h2>
+            <div className="flex items-center gap-3 lg:gap-8 mb-4 lg:mb-10">
+              <div className="">
+                <h2 className="text-2xl font-bold">
+                  Experiences
+                </h2>
+              </div>
+              <div className="hidden dark:block">
+                <img src={line} alt="" />
+              </div>
+            </div>
 
             <div className="mb-20">
               <p className="text-red-500 text-lg">experience</p>
@@ -84,7 +97,7 @@ const Education = () => {
               <p className="text-md mt-1">UI/UX Designer</p>
               <p className="text-sm mt-4 w-[400px]">
                 Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum desi dolore eu fugiat nulla pariatu Duis aute irure
+                cillum desi dolore eu fugiat nulla pariatu Duis aute irure
               </p>
             </div>
 
@@ -103,39 +116,39 @@ cillum desi dolore eu fugiat nulla pariatu Duis aute irure
 
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 mt-28 gap-0 p-0 m-0">
-  <div className="flex justify-center items-center p-0 m-0">
-    <img src={one} alt="Brand 1" className="cursor-pointer border-2 border-[#9F9F9F] p-10 block w-full h-full" />
-  </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-28 gap-0 p-0 m-0">
+          <div className="flex justify-center items-center p-0 m-0">
+            <img src={one} alt="Brand 1" className="cursor-pointer border-2 border-[#9F9F9F] p-10 block w-full h-full" />
+          </div>
 
-  <div className="flex justify-center items-center p-0 m-0">
-    <img src={two} alt="Brand 2" className="cursor-pointer border-2 border-[#9F9F9F] p-10 block w-full h-full" />
-  </div>
+          <div className="flex justify-center items-center p-0 m-0">
+            <img src={two} alt="Brand 2" className="cursor-pointer border-2 border-[#9F9F9F] p-10 block w-full h-full" />
+          </div>
 
-  <div className="flex justify-center items-center p-0 m-0">
-    <img src={three} alt="Brand 3" className="cursor-pointer border-2 border-[#9F9F9F] p-10 block w-full h-full" />
-  </div>
+          <div className="flex justify-center items-center p-0 m-0">
+            <img src={three} alt="Brand 3" className="cursor-pointer border-2 border-[#9F9F9F] p-10 block w-full h-full" />
+          </div>
 
-  <div className="flex justify-center items-center p-0 m-0">
-    <img src={four} alt="Brand 4" className="cursor-pointer border-2 border-[#9F9F9F] p-10 block w-full h-full" />
-  </div>
+          <div className="flex justify-center items-center p-0 m-0">
+            <img src={four} alt="Brand 4" className="cursor-pointer border-2 border-[#9F9F9F] p-10 block w-full h-full" />
+          </div>
 
-  <div className="flex justify-center items-center p-0 m-0">
-    <img src={five} alt="Brand 5" className="cursor-pointer border-2 border-[#9F9F9F] p-10 block w-full h-full" />
-  </div>
+          <div className="flex justify-center items-center p-0 m-0">
+            <img src={five} alt="Brand 5" className="cursor-pointer border-2 border-[#9F9F9F] p-10 block w-full h-full" />
+          </div>
 
-  <div className="flex justify-center items-center p-0 m-0">
-    <img src={six} alt="Brand 6" className="cursor-pointer border-2 border-[#9F9F9F] p-10 block w-full h-full" />
-  </div>
+          <div className="flex justify-center items-center p-0 m-0">
+            <img src={six} alt="Brand 6" className="cursor-pointer border-2 border-[#9F9F9F] p-10 block w-full h-full" />
+          </div>
 
-  <div className="flex justify-center items-center p-0 m-0">
-    <img src={seven} alt="Brand 7" className="cursor-pointer border-2 border-[#9F9F9F] p-10 block w-full h-full" />
-  </div>
+          <div className="flex justify-center items-center p-0 m-0">
+            <img src={seven} alt="Brand 7" className="cursor-pointer border-2 border-[#9F9F9F] p-10 block w-full h-full" />
+          </div>
 
-  <div className="flex justify-center items-center p-0 m-0">
-    <img src={eight} alt="Brand 8" className="cursor-pointer border-2 border-[#9F9F9F] p-10 block w-full h-full" />
-  </div>
-</div>
+          <div className="flex justify-center items-center p-0 m-0">
+            <img src={eight} alt="Brand 8" className="cursor-pointer border-2 border-[#9F9F9F] p-10 block w-full h-full" />
+          </div>
+        </div>
       </div>
     </div>
   );

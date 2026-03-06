@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { MoveRight, Instagram, Linkedin, Twitter, Facebook, MessageCircle, X, Phone, Mail, LocateFixed } from 'lucide-react';
+import { MoveRight, Instagram, Linkedin, Twitter, Facebook, MessageCircleCheck, X, Phone, Mail, LocateFixed } from 'lucide-react';
 import ban from "../assets/banner.png";
 import sideimg from "../assets/sideimg.png";
 import sidebar from "../assets/sidebar.svg";
@@ -36,7 +36,14 @@ const Banner = () => {
           {/* Center Image */}
           <div className="col-span-3">
             <div className="flex justify-center items-center h-full">
-              <img src={ban} alt="" className='max-w-full h-auto object-contain' />
+              <img src={ban} alt="" className='max-w-full h-auto object-contain z-30' />
+              <div className="absolute bottom-[-20px] hidden lg:block">
+                <div className="">
+                  <h1 className="outline-title text-white dark:text-white pb-2 text-[160px] font-bold text-center -z-10">
+                    WEB DESIGN
+                  </h1>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -67,7 +74,7 @@ const Banner = () => {
 
 
         {/* Mobile Layout */}
-        <div className="md:hidden space-y-6">
+        <div className="md:hidden space-y-6 font-rajdhani">
 
           <div className="flex justify-center">
             <img src={ban} alt="" className='w-3/4 max-w-sm h-auto' />
@@ -116,7 +123,7 @@ const Banner = () => {
       {/* Floating Chat Button */}
       <div className="fixed right-3 bottom-5 z-50">
         <button onClick={() => setOpenSidebar(true)} className='p-3 bg-red-600 rounded-full hover:bg-red-700 transition-colors shadow-lg'>
-          <MessageCircle size={24} className='text-white' />
+          <MessageCircleCheck size={24} className='text-white' />
         </button>
       </div>
 
@@ -128,7 +135,7 @@ const Banner = () => {
 
 
       {/* Sidebar */}
-      <div className={`fixed top-0 right-0 h-full w-[320px] overflow-scroll bg-neutral-100 dark:bg-black shadow-2xl z-50 transition-transform duration-300 ${openSidebar ? "translate-x-0" : "translate-x-full"}`}>
+      <div className={`fixed top-0 right-0 h-full w-[320px] overflow-scroll font-rajdhani bg-neutral-100 dark:bg-black shadow-2xl z-50 transition-transform duration-300 ${openSidebar ? "translate-x-0" : "translate-x-full"}`}>
 
         <div className="flex justify-between items-center p-5 bg-neutral-200 dark:bg-black">
           <div>
@@ -136,7 +143,7 @@ const Banner = () => {
             <img src={dark} alt="Logo" className="hidden dark:block w-auto h-8" />
           </div>
           <button onClick={() => setOpenSidebar(false)}>
-            <X size={20} className="cursor-pointer"/>
+            <X size={20} className="cursor-pointer" />
           </button>
         </div>
 
@@ -173,7 +180,7 @@ const Banner = () => {
             </div>
 
             <div className="flex items-center gap-3 ">
-              <LocateFixed size={30} className="text-black dark:text-white p-1 border border-[#c9c1c1] rounded-lg"/>
+              <LocateFixed size={30} className="text-black dark:text-white p-1 border border-[#c9c1c1] rounded-lg" />
               <div>
                 <p className="text-xs ">MY ADDRESS</p>
                 <p className="text-sm font-medium">66 Brooklyn, New York 3269</p>
@@ -201,6 +208,7 @@ const Banner = () => {
       <div className="absolute right-4 top-[15%] md:top-[25%]">
         <img src={sidebar} alt="" />
       </div>
+
 
     </section>
   );

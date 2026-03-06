@@ -1,18 +1,23 @@
 import logo from "../assets/logo.svg"
 import dark from "../assets/darklogo.svg"
 import { Mail, MapPin, Phone, Instagram, Linkedin, Twitter, Facebook } from "lucide-react"
+import ftrimg from "../assets/ftrimg.svg"
 
 const Footer = () => {
   return (
     <footer className="w-full bg-neutral-100 dark:bg-black px-6 md:px-12 lg:px-16 py-16">
-      
-      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+
+      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
 
         {/* Left Section */}
-        <div className="space-y-8">
+        <div className="space-y-8 col-span-2">
 
           <img src={logo} alt="logo" className="w-32 block dark:hidden" />
           <img src={dark} alt="logo" className="w-32 hidden dark:block" />
+
+           <div className="hidden dark:block absolute top-0 left-0 z-auto">
+            <img src={ftrimg} alt="" className="w-[800px] h-full"/>
+          </div>
 
 
           <h2 className="text-2xl sm:text-3xl md:text-4xl leading-snug">
@@ -32,7 +37,7 @@ const Footer = () => {
 
 
         {/* Quick Links */}
-        <div>
+        <div className="col-span-1">
 
           <h3 className="font-semibold text-lg mb-6">Quick Link</h3>
 
@@ -48,7 +53,7 @@ const Footer = () => {
 
 
         {/* Contact */}
-        <div>
+        <div className="col-span-1">
 
           <h3 className="font-semibold text-lg mb-6">Contact</h3>
 
@@ -106,12 +111,13 @@ const Footer = () => {
         </p>
 
         <div className="flex flex-wrap justify-center md:justify-end gap-4">
-          <p className="cursor-pointer hover:text-black">Terms & Condition</p>
-          <p className="cursor-pointer hover:text-black">Privacy Policy</p>
-          <p className="cursor-pointer hover:text-black">Contact Us</p>
+          <p className="cursor-pointer hover:text-gray-200">Terms & Condition</p>
+          <p className="cursor-pointer hover:text-gray-200">Privacy Policy</p>
+          <p className="cursor-pointer hover:text-gray-200">Contact Us</p>
         </div>
 
       </div>
+
 
     </footer>
   )
