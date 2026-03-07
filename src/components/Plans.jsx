@@ -46,7 +46,7 @@ const Plans = () => {
           </div>
 
           {/* Card 2 */}
-          <div className="bg-neutral-100 dark:bg-black dark:border-1 dark:border-[gray] rounded-2xl shadow-md border-r-2 border-b-2 border-[white] hover:border-red-600 dark:hover:border-gray-200 p-8 flex flex-col justify-between hover:shadow-xl hover:scale-120 transition-all scale-115 ease-in-out duration-300 cursor-pointer">
+          <div className="bg-neutral-100 dark:bg-black dark:border-1 dark:border-[gray] rounded-2xl shadow-md border-r-2 border-b-2 border-[white] hover:border-red-600 dark:hover:border-gray-200 p-8 flex flex-col justify-between hover:shadow-xl hover:scale-105 lg:hover:scale-120 transition-all scale:0 md:scale-105 ease-in-out duration-300 cursor-pointer">
             <div>
               <h3 className="text-lg font-semibold mb-4">Basic</h3>
               <h1 className="text-4xl font-bold">$ 230.00</h1>

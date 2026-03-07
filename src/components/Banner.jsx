@@ -33,7 +33,7 @@ const Banner = () => {
           <div className="col-span-3">
             <div className="flex justify-center items-center h-full">
               <img src={ban} alt="" className='max-w-full h-auto object-contain z-30' />
-              <div className="absolute bottom-[-20px] hidden lg:block">
+              <div className="absolute bottom-[-20px] transform -translate-x-[-25px] hidden lg:block">
                 <div className="">
                   <h1 className="outline-title text-white dark:text-white pb-2 text-[160px] font-bold text-center -z-10">
                     WEB DESIGN
