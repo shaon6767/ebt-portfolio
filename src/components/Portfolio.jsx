@@ -28,7 +28,7 @@ const Portfolio = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-10 space-y-6 lg:space-y-16">
                     <div className="">
-                        <div className="bg-white rounded-2xl p-6 shadow-md">
+                        <div className="bg-gray-100 rounded-2xl p-6 border-2 border-[#d1cece]">
                             <div className="rounded-xl overflow-hidden">
                                 <img
                                     src={one}
@@ -39,23 +39,23 @@ const Portfolio = () => {
                         </div>
                         <div className="flex justify-between items-center mt-6">
                             <div>
-                                <h3 className="text-lg font-semibold text-gray-800">
+                                <h3 className="text-lg font-semibold ">
                                     My Journey as a Creator
                                 </h3>
-                                <p className="text-sm text-gray-500 mt-1">
+                                <p className="text-sm mt-1">
                                     Development Coaches
                                 </p>
                             </div>
 
-                            <button className="p-1 border-1 border-[#c2bebe] rounded-lg hover:bg-red-500 hover:text-white cursor-pointer transition-all duration-150 ease-in-out">
-                                <MoveUpRight size={20}/>
+                            <button className="p-3 border-2 border-[#ddd7d7] rounded-lg hover:bg-red-500 hover:text-white cursor-pointer transition-all duration-150 ease-in-out">
+                                <MoveUpRight size={15}/>
                             </button>
                         </div>
                     </div>
 
 
                     <div className="">
-                        <div className="bg-white rounded-2xl p-6 shadow-md md:mt-18">
+                        <div className="bg-gray-100 rounded-2xl p-6 border-2 border-[#d1cece] md:mt-18">
                             <div className="rounded-xl overflow-hidden">
                                 <img
                                     src={two}
@@ -66,22 +66,22 @@ const Portfolio = () => {
                         </div>
                         <div className="flex justify-between items-center mt-6">
                             <div>
-                                <h3 className="text-lg font-semibold text-gray-800">
+                                <h3 className="text-lg font-semibold ">
                                     My Professional Portfolio
                                 </h3>
-                                <p className="text-sm text-gray-500 mt-1">
+                                <p className="text-sm mt-1">
                                     Development Coaches
                                 </p>
                             </div>
 
-                             <button className="p-1 border-1 border-[#c2bebe] rounded-lg hover:bg-red-500 hover:text-white cursor-pointer transition-all duration-150 ease-in-out">
-                                <MoveUpRight size={20}/>
+                             <button className="p-3 border-2 border-[#ddd7d7] rounded-lg hover:bg-red-500 hover:text-white cursor-pointer transition-all duration-150 ease-in-out">
+                                <MoveUpRight size={15}/>
                             </button>
                         </div>
                     </div>
 
                     <div className="">
-                        <div className="bg-white rounded-2xl p-6 shadow-md md:-mt-18">
+                        <div className="bg-gray-100 rounded-2xl p-6 border-2 border-[#d1cece] md:-mt-18">
                             <div className="rounded-xl overflow-hidden">
                                 <img
                                     src={three}
@@ -93,23 +93,23 @@ const Portfolio = () => {
 
                         <div className="flex justify-between items-center mt-6">
                             <div>
-                                <h3 className="text-lg font-semibold text-gray-800">
+                                <h3 className="text-lg font-semibold ">
                                     My Portfolio of Innovation
                                 </h3>
-                                <p className="text-sm text-gray-500 mt-1">
+                                <p className="text-sm  mt-1">
                                     App Development
                                 </p>
                             </div>
 
-                             <button className="p-1 border-1 border-[#c2bebe] rounded-lg hover:bg-red-500 hover:text-white cursor-pointer transition-all duration-150 ease-in-out">
-                                <MoveUpRight size={20}/>
+                             <button className="p-3 border-2 border-[#ddd7d7] rounded-lg hover:bg-red-500 hover:text-white cursor-pointer transition-all duration-150 ease-in-out">
+                                <MoveUpRight size={15}/>
                             </button>
                         </div>
                     </div>
 
 
                     <div className="">
-                        <div className="bg-white rounded-2xl p-6 shadow-md">
+                        <div className="bg-gray-100 rounded-2xl p-6 border-2 border-[#d1cece]">
                             <div className="rounded-xl overflow-hidden">
                                 <img
                                     src={four}
@@ -121,16 +121,16 @@ const Portfolio = () => {
 
                         <div className="flex justify-between items-center mt-6">
                             <div>
-                                <h3 className="text-lg font-semibold text-gray-800">
+                                <h3 className="text-lg font-semibold ">
                                     A Portfolio of Creativity and Passion
                                 </h3>
-                                <p className="text-sm text-gray-500 mt-1">
+                                <p className="text-sm  mt-1">
                                     Business Development
                                 </p>
                             </div>
 
-                             <button className="p-1 border-1 border-[#c2bebe] rounded-lg hover:bg-red-500 hover:text-white cursor-pointer transition-all duration-150 ease-in-out">
-                                <MoveUpRight size={20}/>
+                             <button className="p-3 border-2 border-[#ddd7d7] rounded-lg hover:bg-red-500 hover:text-white cursor-pointer transition-all duration-150 ease-in-out">
+                                <MoveUpRight size={15}/>
                             </button>
                         </div>
                     </div>

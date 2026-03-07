@@ -15,12 +15,12 @@ const skillsRight = [
 ]
 
 const SkillBar = ({ name, percent, animate }) => (
-  <div className="mb-8">
+  <div className="mb-8 font-rajdhani">
     <div className="flex justify-between mb-2">
-      <span className="text-sm tracking-widest text-gray-700 dark:text-white">
+      <span className="text-sm font-medium  dark:text-white">
         {name}
       </span>
-      <span className="text-sm font-medium text-gray-700 dark:text-white">
+      <span className="text-sm font-medium dark:text-white">
         {percent}%
       </span>
     </div>

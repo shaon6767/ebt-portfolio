@@ -15,25 +15,21 @@ const Banner = () => {
 
       <div className='max-w-7xl px-4 mx-auto'>
 
-        {/* Desktop Grid Layout */}
         <div className="hidden md:grid grid-cols-5 gap-4">
-
-          {/* Left Column */}
           <div className="col-span-1 space-y-4">
-            <div className="mt-[200px]">
-              <h1 className='text-xl lg:text-2xl'>HELLOW I'M</h1>
+            <div className="mt-[200px] lg:space-y-4">
+              <h1 className='text-xl lg:text-2xl font-bold'>HELLOW I'M</h1>
               <h2 className='text-4xl lg:text-[70px] font-bold leading-tight'>Brooklyn</h2>
               <h2 className='text-4xl lg:text-[70px] font-bold leading-tight'>Simmons</h2>
             </div>
 
             <div>
-              <button className='flex items-center gap-2 px-4 lg:px-6 py-2 lg:py-3 bg-[#f93939] rounded-[24px] text-white hover:bg-[#f71a1a] transition-colors text-sm lg:text-base whitespace-nowrap'>
+              <button className='flex items-center gap-2 px-4 lg:px-6 py-2 lg:py-3 bg-[#f93939] mt-0 lg:mt-8 rounded-[24px] text-white hover:bg-[#f71a1a] transition-colors text-sm lg:text-base whitespace-nowrap'>
                 View Portfolio <MoveRight size={18} />
               </button>
             </div>
           </div>
 
-          {/* Center Image */}
           <div className="col-span-3">
             <div className="flex justify-center items-center h-full">
               <img src={ban} alt="" className='max-w-full h-auto object-contain z-30' />
@@ -47,35 +43,30 @@ const Banner = () => {
             </div>
           </div>
 
-          {/* Right Column */}
           <div className="col-span-1 mt-[200px] space-y-5">
-
             <div className="flex flex-col">
               <h3 className='text-lg font-semibold'>About Me</h3>
-              <p className='mt-4 text-sm lg:text-base'>
+              <p className='mt-4 text-sm lg:text-base w-[250px] leading-[30px]'>
                 A personal <span className='text-red-600 font-medium'>portfolio</span> is a collection of
                 your work, achievements, and skills that <span className='text-red-600 font-medium'>web design</span> highlights.
               </p>
             </div>
 
-            <div className="space-y-3">
+            <div className="space-y-3 lg:space-y-5 mt-0 lg:mt-8">
               <p className='text-sm lg:text-base'>Find me on</p>
 
               <div className="flex items-center gap-2 lg:gap-3">
-                <Instagram size={34} className="p-2 bg-gray-200 dark:bg-gray-600 rounded-full dark:text-white hover:text-white hover:bg-gray-400 dark:hover:bg-gray-500 transition-all cursor-pointer" />
-                <Linkedin size={34} className="p-2 bg-gray-200 dark:bg-gray-600 rounded-full dark:text-white hover:text-white hover:bg-gray-400 dark:hover:bg-gray-500 transition-all cursor-pointer" />
-                <Twitter size={34} className="p-2 bg-gray-200 dark:bg-gray-600 rounded-full dark:text-white hover:text-white hover:bg-gray-400 dark:hover:bg-gray-500 transition-all cursor-pointer" />
-                <Facebook size={34} className="p-2 bg-gray-200 dark:bg-gray-600 rounded-full dark:text-white hover:text-white hover:bg-gray-400 dark:hover:bg-gray-500 transition-all cursor-pointer" />
+                <Instagram size={32} className="p-2 bg-gray-200 dark:bg-gray-600 rounded-full dark:text-white hover:text-white hover:bg-gray-400 dark:hover:bg-gray-500 transition-all cursor-pointer" />
+                <Linkedin size={32} className="p-2 bg-gray-200 dark:bg-gray-600 rounded-full dark:text-white hover:text-white hover:bg-gray-400 dark:hover:bg-gray-500 transition-all cursor-pointer" />
+                <Twitter size={32} className="p-2 bg-gray-200 dark:bg-gray-600 rounded-full dark:text-white hover:text-white hover:bg-gray-400 dark:hover:bg-gray-500 transition-all cursor-pointer" />
+                <Facebook size={32} className="p-2 bg-gray-200 dark:bg-gray-600 rounded-full dark:text-white hover:text-white hover:bg-gray-400 dark:hover:bg-gray-500 transition-all cursor-pointer" />
               </div>
             </div>
-
           </div>
         </div>
 
 
-        {/* Mobile Layout */}
         <div className="md:hidden space-y-6 font-rajdhani">
-
           <div className="flex justify-center">
             <img src={ban} alt="" className='w-3/4 max-w-sm h-auto' />
           </div>
@@ -120,7 +111,6 @@ const Banner = () => {
       </div>
 
 
-      {/* Floating Chat Button */}
       <div className="fixed right-3 bottom-5 z-50">
         <button onClick={() => setOpenSidebar(true)} className='p-3 bg-red-600 rounded-full hover:bg-red-700 transition-colors shadow-lg'>
           <MessageCircleCheck size={24} className='text-white' />
@@ -128,13 +118,10 @@ const Banner = () => {
       </div>
 
 
-      {/* Overlay */}
       {openSidebar && (
         <div onClick={() => setOpenSidebar(false)} className="fixed inset-0 bg-black/40 z-40" />
       )}
 
-
-      {/* Sidebar */}
       <div className={`fixed top-0 right-0 h-full w-[320px] overflow-scroll font-rajdhani bg-neutral-100 dark:bg-black shadow-2xl z-50 transition-transform duration-300 ${openSidebar ? "translate-x-0" : "translate-x-full"}`}>
 
         <div className="flex justify-between items-center p-5 bg-neutral-200 dark:bg-black">
@@ -147,7 +134,7 @@ const Banner = () => {
           </button>
         </div>
 
-        <div className="p-5 space-y-5">
+        <div className="p-5 space-y-4">
 
           <img src={sideimg} alt="" className="" />
 
@@ -161,7 +148,7 @@ const Banner = () => {
             and user-centric web solutions.
           </p>
 
-          <div className="space-y-4">
+          <div className="space-y-3">
 
             <div className="flex gap-3 items-center">
               <Phone size={30} className="text-black dark:text-white p-1 border border-[#c9c1c1] rounded-lg" />

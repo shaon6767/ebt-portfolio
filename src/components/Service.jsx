@@ -5,7 +5,6 @@ const Service = () => {
     <section className="w-full bg-white dark:bg-black py-14 sm:py-16 lg:py-20 px-4 sm:px-6 md:px-12 lg:px-16 overflow-hidden">
       <div className="max-w-7xl mx-auto">
 
-        {/* Heading */}
         <div className="text-center max-w-3xl mx-auto">
           <p className="text-red-500 tracking-widest uppercase text-xs sm:text-sm font-semibold">
             Latest Service
@@ -15,17 +14,15 @@ const Service = () => {
             Inspiring The World One Project
           </h2>
 
-          <p className="mt-4 text-sm sm:text-base text-gray-500 dark:text-gray-300 leading-relaxed">
+          <p className="text-gray-500 mt-4 max-w-[600px] mx-auto">
             Business consulting consultants provide expert advice and guide
             businesses to help them improve their performance, efficiency,
-            and organizational growth.
+            and organizations.
           </p>
         </div>
 
-        {/* Content */}
         <div className="mt-12 lg:mt-16 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
 
-          {/* Services */}
           <div className="space-y-6 sm:space-y-8">
 
             <div className="bg-gray-100 dark:bg-black rounded-2xl p-6 sm:p-8 border-b-2 border-r-2 border-red-500 hover:scale-[1.03] shadow-lg transition-all duration-200">
@@ -60,7 +57,7 @@ const Service = () => {
 
           </div>
 
-          {/* Image */}
+
           <div className="flex justify-center lg:justify-end">
             <img
               src={man}

@@ -39,7 +39,7 @@ const SkillsSection = () => {
             </p>
 
             <div className="md:col-span-2 flex md:justify-end">
-              <button className="flex items-center gap-2 text-sm font-medium">
+              <button className="flex items-center gap-2 text-sm font-bold">
                 READ MORE <ChevronRight size={16} />
               </button>
             </div>
@@ -66,7 +66,7 @@ const SkillsSection = () => {
             </p>
 
             <div className="md:col-span-2 flex md:justify-end">
-              <button className="flex items-center gap-2 text-sm font-medium">
+              <button className="flex items-center gap-2 text-sm font-bold">
                 READ MORE <ChevronRight size={16} />
               </button>
             </div>
@@ -93,7 +93,7 @@ const SkillsSection = () => {
             </p>
 
             <div className="md:col-span-2 flex md:justify-end">
-              <button className="flex items-center gap-2 text-sm font-medium">
+              <button className="flex items-center gap-2 text-sm font-bold">
                 READ MORE <ChevronRight size={16} />
               </button>
             </div>

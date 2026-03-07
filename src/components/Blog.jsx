@@ -17,7 +17,6 @@ const Blog = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 
-          {/* Card 1 */}
           <div className="bg-neutral-200 dark:bg-[#141414] p-8 rounded-2xl shadow-sm border-r-2 border-red-500 dark:border-none  text-left space-y-12 hover:scale-105 duration-150 ease-in-out transition-all">
            <div className="">
             <img src={test} alt="" />
@@ -38,7 +37,7 @@ const Blog = () => {
             </div>
           </div>
 
-          {/* Card 2 */}
+
           <div className="bg-neutral-200 dark:bg-[#141414] p-8 rounded-2xl shadow-sm border-r-2 border-red-500 dark:border-none text-left space-y-12 hover:scale-105 duration-150 ease-in-out transition-all">
             <div className="">
             <img src={test} alt="" />
@@ -63,7 +62,6 @@ const Blog = () => {
       </div>
 
 
-      {/* BLOG SECTION */}
       <div className="max-w-7xl mx-auto mt-20 text-center">
 
         <p className="text-xs tracking-widest text-red-500 mb-3">BLOG AND NEWS</p>
@@ -74,7 +72,6 @@ const Blog = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
-          {/* Blog Card 1 */}
           <div className="bg-white dark:bg-[#141414]  p-2 rounded-2xl shadow-sm overflow-hidden text-left">
 
             <img
@@ -88,15 +85,14 @@ const Blog = () => {
                 Let's bring your ideas to life! Contact me, and let's
               </p>
 
-              <p className="text-sm flex items-center text-gray-500 cursor-pointer">
-                READ MORE <span><ChevronRight/></span>
+              <p className="text-xs flex items-center text-gray-500 gap-2 cursor-pointer">
+                READ MORE <span><ChevronRight size={20}/></span>
               </p>
             </div>
 
           </div>
 
 
-          {/* Blog Card 2 */}
           <div className="bg-white dark:bg-[#141414]  p-2 rounded-2xl shadow-sm overflow-hidden text-left">
 
             <img
@@ -110,8 +106,8 @@ const Blog = () => {
                 Inspiring the World, One Project at a Time for the
               </p>
 
-              <p className="text-sm flex items-center text-gray-500 cursor-pointer">
-                READ MORE <span><ChevronRight/></span>
+              <p className="text-xs flex items-center text-gray-500 gap-2 cursor-pointer">
+                READ MORE <span><ChevronRight size={20}/></span>
               </p>
             </div>
 
@@ -131,8 +127,8 @@ const Blog = () => {
                 Each one showcases my approach and dedication
               </p>
 
-              <p className="text-sm flex items-center text-gray-500 cursor-pointer">
-                READ MORE <span><ChevronRight/></span>
+              <p className="text-xs flex items-center text-gray-500 gap-2 cursor-pointer">
+                READ MORE <span><ChevronRight size={20}/></span>
               </p>
             </div>
 

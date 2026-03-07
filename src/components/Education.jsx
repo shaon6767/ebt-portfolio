@@ -28,39 +28,39 @@ const Education = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 
 
-          <div className="bg-[#F4F4F4] space-y-4 dark:bg-[#141414] p-8 rounded-2xl shadow-md border-b-2 dark:border-none border-r-2 border-red-400">
-            <h4 className="text-sm text-black dark:text-white">Trainer Marketing</h4>
-            <p className="text-sm font-semibold mt-1">2005-2009</p>
-            <p className="text-gray-500 text-sm mt-4">
+          <div className="bg-[#F4F4F4] dark:bg-[#141414] p-8 rounded-2xl shadow-md border-b-2 dark:border-none border-r-2 border-red-400">
+            <h4 className="text-md text-black dark:text-white">Trainer Marketing</h4>
+            <p className="text-md font-semibold mt-1">2005-2009</p>
+            <p className="text-gray-500 text-[17px] mt-4">
               A personal portfolio is a curated collection of an individual's
               professional work, showcasing their skills, experience & personal projects.
             </p>
           </div>
 
-          <div className="bg-[#F4F4F4] space-y-4 dark:bg-[#141414] p-8 rounded-2xl shadow-md border-b-2 dark:border-none border-r-2 border-red-400">
-            <h4 className="text-sm text-gray-500">Assistant Director</h4>
-            <p className="text-sm font-semibold mt-1">2010-2014</p>
-            <p className="text-gray-500 text-sm mt-4">
+          <div className="bg-[#F4F4F4] dark:bg-[#141414] p-8 rounded-2xl shadow-md border-b-2 dark:border-none border-r-2 border-red-400">
+            <h4 className="text-md">Assistant Director</h4>
+            <p className="text-md font-semibold mt-1">2010-2014</p>
+            <p className="text-gray-500 text-[17px] mt-4">
               Each project here showcases my commitment to excellence and
               adaptability, tailored to meet each client's unique needs.
             </p>
           </div>
 
 
-          <div className="bg-[#F4F4F4] space-y-4 dark:bg-[#141414] p-8 rounded-2xl shadow-md border-b-2 dark:border-none border-r-2 border-red-400">
-            <h4 className="text-sm text-gray-500">Design Assistant</h4>
-            <p className="text-sm font-semibold mt-1">2008-2012</p>
-            <p className="text-gray-500 text-sm mt-4">
+          <div className="bg-[#F4F4F4] dark:bg-[#141414] p-8 rounded-2xl shadow-md border-b-2 dark:border-none border-r-2 border-red-400">
+            <h4 className="text-md text-gray-500">Design Assistant</h4>
+            <p className="text-md font-semibold mt-1">2008-2012</p>
+            <p className="text-gray-500 text-[17px] mt-4">
               I've had the privilege of working with various clients, from startups
               to established companies, helping bring their visions to life.
             </p>
           </div>
 
 
-          <div className="bg-[#F4F4F4] space-y-4 dark:bg-[#141414] p-8 rounded-2xl shadow-md border-b-2 dark:border-none border-r-2 border-red-400">
-            <h4 className="text-sm text-gray-500">Design Assistant</h4>
-            <p className="text-sm font-semibold mt-1">2008-2012</p>
-            <p className="text-gray-500 text-sm mt-4">
+          <div className="bg-[#F4F4F4] dark:bg-[#141414] p-8 rounded-2xl shadow-md border-b-2 dark:border-none border-r-2 border-red-400">
+            <h4 className="text-md">Design Assistant</h4>
+            <p className="text-md font-semibold mt-1">2008-2012</p>
+            <p className="text-gray-500 text-[17px] mt-4">
               Each project here showcases my commitment to excellence and
               adaptability, tailored to meet each client's needs.
             </p>
@@ -89,25 +89,25 @@ const Education = () => {
               </div>
             </div>
 
-            <div className="mb-20">
-              <p className="text-red-500 text-lg">experience</p>
+            <div className="mb-12">
+              <p className="text-red-500 font-semibold text-lg">experience</p>
               <h4 className="font-semibold text-xl mt-1">
                 Fatima Asrafy
               </h4>
-              <p className="text-md mt-1">UI/UX Designer</p>
-              <p className="text-sm mt-4 w-[400px]">
+              <p className="text-md mt-3">UI/UX Designer</p>
+              <p className="text-[15px] mt-4 w-[400px] leading-[30px] text-gray-500">
                 Duis aute irure dolor in reprehenderit in voluptate velit esse
                 cillum desi dolore eu fugiat nulla pariatu Duis aute irure
               </p>
             </div>
 
             <div>
-              <p className="text-red-500 text-lg">experience</p>
+              <p className="text-red-500 font-semibold text-lg">experience</p>
               <h4 className="font-semibold text-xl mt-1">
                 Fatima Asrafy
               </h4>
-              <p className="text-md mt-1">UI/UX Designer</p>
-              <p className=" text-sm mt-4 w-[400px]">
+              <p className="text-md mt-3">UI/UX Designer</p>
+              <p className=" text-[15px] mt-4 w-[400px] leading-[30px] text-gray-500">
                 Interested in working together? Let's bring your ideas to life.
                 Hit Contact me, and let's start building something.
               </p>

@@ -62,7 +62,7 @@ const Footer = () => {
           </div>
 
 
-          <div className="flex flex-wrap gap-4 mt-6">
+          <div className="flex gap-4 mt-6">
             <div className="p-2 bg-neutral-200 rounded-full shadow cursor-pointer hover:bg-neutral-300 dark:bg-neutral-600 transition">
               <Instagram size={16} />
             </div>
@@ -85,9 +85,9 @@ const Footer = () => {
           © InversWeb 2026 | All Rights Reserved
         </p>
         <div className="flex flex-wrap justify-center md:justify-end gap-4">
-          <p className="cursor-pointer hover:text-gray-200">Terms & Condition</p>
-          <p className="cursor-pointer hover:text-gray-200">Privacy Policy</p>
-          <p className="cursor-pointer hover:text-gray-200">Contact Us</p>
+          <p className="cursor-pointer hover:text-black">Terms & Condition</p>
+          <p className="cursor-pointer hover:text-black">Privacy Policy</p>
+          <p className="cursor-pointer hover:text-black">Contact Us</p>
         </div>
       </div>
 

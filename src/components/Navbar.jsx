@@ -29,7 +29,7 @@ const Navbar = () => {
                 <li key={item}>
                   <a 
                     href="#" 
-                    className="text-gray-700 dark:text-gray-300 hover:text-red-500 dark:hover:text-red-400 transition-colors text-sm lg:text-base"
+                    className=" font-bold dark:text-white hover:text-red-500 dark:hover:text-red-400 transition-colors text-sm lg:text-base"
                   >
                     {item}
                   </a>
@@ -40,17 +40,17 @@ const Navbar = () => {
 
 
           <div className="col-span-1">
-            <div className="flex items-center gap-2 lg:gap-5 justify-end">
-              <Instagram size={34} className="p-2 bg-gray-200 dark:bg-gray-700 rounded-full dark:text-white hover:bg-red-500 hover:text-white transition-all cursor-pointer ease-in-out"/>
-              <Linkedin size={34} className="p-2 bg-gray-200 dark:bg-gray-700 rounded-full dark:text-white hover:bg-red-500 hover:text-white transition-all cursor-pointer ease-in-out"/>
-              <Twitter size={34} className="p-2 bg-gray-200 dark:bg-gray-700 rounded-full dark:text-white hover:bg-red-500 hover:text-white transition-all cursor-pointer ease-in-out"/>
-              <Facebook size={34} className="p-2 bg-gray-200 dark:bg-gray-700 rounded-full dark:text-white hover:bg-red-500 hover:text-white transition-all cursor-pointer ease-in-out"/>
+            <div className="flex items-center gap-2 justify-end">
+              <Instagram size={40} className="p-3 bg-gray-200 dark:bg-gray-700 rounded-full dark:text-white hover:bg-red-500 hover:text-white transition-all cursor-pointer ease-in-out"/>
+              <Linkedin size={40} className="p-3 bg-gray-200 dark:bg-gray-700 rounded-full dark:text-white hover:bg-red-500 hover:text-white transition-all cursor-pointer ease-in-out"/>
+              <Twitter size={40} className="p-3 bg-gray-200 dark:bg-gray-700 rounded-full dark:text-white hover:bg-red-500 hover:text-white transition-all cursor-pointer ease-in-out"/>
+              <Facebook size={40} className="p-3 bg-gray-200 dark:bg-gray-700 rounded-full dark:text-white hover:bg-red-500 hover:text-white transition-all cursor-pointer ease-in-out"/>
               <button
                 onClick={toggleTheme}
-                className="p-2 rounded-lg bg-gray-200 dark:bg-gray-700 hover:bg-gray-500 dark:hover:bg-gray-800 transition-colors"
+                className="p-3 rounded-lg bg-gray-200 dark:bg-gray-700 hover:bg-gray-500 dark:hover:bg-gray-800 transition-colors"
                 aria-label="Toggle theme"
               >
-                {isDarkMode ? <Sun size={20}/> : <Moon size={20}/>}
+                {isDarkMode ? <Sun size={15}/> : <Moon size={15}/>}
               </button>
             </div>
           </div>
