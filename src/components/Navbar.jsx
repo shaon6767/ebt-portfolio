@@ -76,30 +76,13 @@ const Navbar = () => {
                   {item.dropdown && (
                     <ul
                       className="
-                      absolute left-0 top-full pt-3 w-52
-                      bg-white dark:bg-gray-900
-                      shadow-xl rounded-lg
-                      border border-gray-200 dark:border-gray-700
-                      hidden lg:block
-                      opacity-0 invisible
-                      group-hover:opacity-100 group-hover:visible
-                      transition-all duration-300
-                      z-50
-                    "
-                    >
+                      absolute left-0 top-full pt-3 w-52 bg-white dark:bg-gray-900 shadow-xl rounded-lg border border-gray-200 dark:border-gray-700 hidden lg:block opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50" >
                       {item.dropdown.map((sub) => (
                         <li key={sub.name}>
                           <a
                             href="#"
                             className="
-                            flex items-center gap-3
-                            px-4 py-3
-                            text-sm
-                            dark:text-gray-300
-                            hover:bg-red-500 hover:text-white
-                            transition
-                          "
-                          >
+                            flex items-center gap-3 px-4 py-3 text-sm dark:text-gray-300  hover:bg-red-500 hover:text-white transition ">
                             {sub.icon}
                             {sub.name}
                           </a>
@@ -107,7 +90,6 @@ const Navbar = () => {
                       ))}
                     </ul>
                   )}
-
                 </li>
               ))}
 
