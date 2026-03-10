@@ -119,35 +119,35 @@ const Education = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-28 gap-0 p-0 m-0">
 
           <div className="flex justify-center items-center p-0 m-0">
-            <img src={one} alt="Brand 1" className="cursor-pointer border-2 border-[#9F9F9F] p-10 block w-full h-full" />
+            <img src={one} alt="Brand 1" className="cursor-pointer border-t-2 border-l-2 border-[#e4dddd] p-14 block w-full h-full" />
           </div>
 
           <div className="flex justify-center items-center p-0 m-0">
-            <img src={two} alt="Brand 2" className="cursor-pointer border-2 border-[#9F9F9F] p-10 block w-full h-full" />
+            <img src={two} alt="Brand 2" className="cursor-pointer border-t-2 border-l-2 border-[#e4dddd]  p-14 block w-full h-full" />
           </div>
 
           <div className="flex justify-center items-center p-0 m-0">
-            <img src={three} alt="Brand 3" className="cursor-pointer border-2 border-[#9F9F9F] p-10 block w-full h-full" />
+            <img src={three} alt="Brand 3" className="cursor-pointer border-t-2 border-l-2 border-[#e4dddd] p-14 block w-full h-full" />
           </div>
 
           <div className="flex justify-center items-center p-0 m-0">
-            <img src={four} alt="Brand 4" className="cursor-pointer border-2 border-[#9F9F9F] p-10 block w-full h-full" />
+            <img src={four} alt="Brand 4" className="cursor-pointer border-t-2 border-l-2 border-r-2 border-[#e4dddd] p-14 block w-full h-full" />
           </div>
 
           <div className="flex justify-center items-center p-0 m-0">
-            <img src={five} alt="Brand 5" className="cursor-pointer border-2 border-[#9F9F9F] p-10 block w-full h-full" />
+            <img src={five} alt="Brand 5" className="cursor-pointer border-t-2 border-l-2 border-b-2 border-[#e4dddd] p-14 block w-full h-full" />
           </div>
 
           <div className="flex justify-center items-center p-0 m-0">
-            <img src={six} alt="Brand 6" className="cursor-pointer border-2 border-[#9F9F9F] p-10 block w-full h-full" />
+            <img src={six} alt="Brand 6" className="cursor-pointer border-t-2 border-l-2 border-b-2 border-[#e4dddd] p-14 block w-full h-full" />
           </div>
 
           <div className="flex justify-center items-center p-0 m-0">
-            <img src={seven} alt="Brand 7" className="cursor-pointer border-2 border-[#9F9F9F] p-10 block w-full h-full" />
+            <img src={seven} alt="Brand 7" className="cursor-pointer border-t-2 border-l-2 border-b-2 border-[#e4dddd] p-14 block w-full h-full" />
           </div>
 
           <div className="flex justify-center items-center p-0 m-0">
-            <img src={eight} alt="Brand 8" className="cursor-pointer border-2 border-[#9F9F9F] p-10 block w-full h-full" />
+            <img src={eight} alt="Brand 8" className="cursor-pointer border-2 border-[#e4dddd] p-14 block w-full h-full" />
           </div>
 
         </div>

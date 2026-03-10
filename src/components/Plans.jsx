@@ -1,10 +1,18 @@
-import { CircleCheck } from 'lucide-react';
+import { CircleCheck } from "lucide-react";
+import { motion } from "framer-motion";
 
 const Plans = () => {
   return (
     <div className="py-16 px-4">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-12">
+
+        <motion.div
+          className="text-center mb-12"
+          initial={{ opacity: 0, y: 60 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
           <p className="text-red-500 uppercase tracking-widest text-sm font-semibold">
             My Price Plan
           </p>
@@ -12,95 +20,117 @@ const Plans = () => {
             Enhancing Collaboration <br className="hidden sm:block" />
             between Remote
           </h2>
-        </div>
+        </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-18">
-          
-          
-          <div className="bg-neutral-100 dark:bg-black dark:border-1 dark:border-[gray] rounded-2xl shadow-md border-r-2 border-b-2 border-[white] hover:border-red-600 dark:hover:border-gray-200 p-8 flex flex-col justify-between hover:shadow-xl hover:scale-105 transition-all ease-in-out duration-300 cursor-pointer">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 py-1 md:py-4 lg:py-8 lg:gap-18">
+
+          {/* Starter */}
+          <motion.div
+            initial={{ opacity: 0, y: 80 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            viewport={{ once: true }}
+            className="bg-neutral-100 dark:bg-black dark:border-1 dark:border-[gray] rounded-2xl shadow-md border-r-2 border-b-2 border-[white] hover:border-red-600 dark:hover:border-gray-200 p-8 flex flex-col justify-between hover:shadow-xl hover:scale-105 transition-all ease-in-out duration-300 cursor-pointer"
+          >
             <div>
               <h3 className="text-lg font-semibold mb-4">Starter</h3>
               <h1 className="text-4xl font-bold">$ 5.00</h1>
               <p className="mb-6">Per Month</p>
               <ul className="space-y-3">
-                <li className='flex items-center gap-2'>
-                  <CircleCheck size={18} className='text-red-600 flex-shrink-0'/>
+                <li className="flex items-center gap-2">
+                  <CircleCheck size={18} className="text-red-600 flex-shrink-0" />
                   <span>5 Social Media Account</span>
                 </li>
-                <li className='flex items-center gap-2'>
-                  <CircleCheck size={18} className='text-red-600 flex-shrink-0'/>
+                <li className="flex items-center gap-2">
+                  <CircleCheck size={18} className="text-red-600 flex-shrink-0" />
                   <span>Free Platform Access</span>
                 </li>
-                <li className='flex items-center gap-2'>
-                  <CircleCheck size={18} className='text-red-600 flex-shrink-0'/>
+                <li className="flex items-center gap-2">
+                  <CircleCheck size={18} className="text-red-600 flex-shrink-0" />
                   <span>24/7 Customer Support</span>
                 </li>
               </ul>
             </div>
+
             <button className="mt-8 border border-gray-300 rounded-full py-2 px-6 hover:bg-red-500 hover:text-white transition duration-300">
               Get Started →
             </button>
-          </div>
+          </motion.div>
 
-
-          <div className="bg-neutral-100 dark:bg-black dark:border-1 dark:border-[gray] rounded-2xl shadow-md border-r-2 border-b-2 border-[white] hover:border-red-600 dark:hover:border-gray-200 p-8 flex flex-col justify-between hover:shadow-xl hover:scale-105 lg:hover:scale-120 transition-all scale:0 md:scale-105  lg:scale-120 ease-in-out duration-300 cursor-pointer">
+          {/* Basic */}
+          <motion.div
+            initial={{ opacity: 0, y: 80 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            viewport={{ once: true }}
+            className="bg-neutral-100 dark:bg-black dark:border-1 dark:border-[gray] rounded-2xl shadow-md border-r-2 border-b-2 border-[white] hover:border-red-600 dark:hover:border-gray-200 p-8 flex flex-col justify-between hover:shadow-xl hover:scale-105 lg:hover:scale-120 transition-all scale:0 md:scale-105 lg:scale-120 ease-in-out duration-300 cursor-pointer"
+          >
             <div>
               <h3 className="text-lg font-semibold mb-4">Basic</h3>
               <h1 className="text-4xl font-bold">$ 230.00</h1>
               <p className="mb-6">Per Month</p>
               <ul className="space-y-3">
-                <li className='flex items-center gap-2'>
-                  <CircleCheck size={18} className='text-red-600 flex-shrink-0'/>
+                <li className="flex items-center gap-2">
+                  <CircleCheck size={18} className="text-red-600 flex-shrink-0" />
                   <span>5 Social Media Account</span>
                 </li>
-                <li className='flex items-center gap-2'>
-                  <CircleCheck size={18} className='text-red-600 flex-shrink-0'/>
+                <li className="flex items-center gap-2">
+                  <CircleCheck size={18} className="text-red-600 flex-shrink-0" />
                   <span>Free Platform Access</span>
                 </li>
-                <li className='flex items-center gap-2'>
-                  <CircleCheck size={18} className='text-red-600 flex-shrink-0'/>
+                <li className="flex items-center gap-2">
+                  <CircleCheck size={18} className="text-red-600 flex-shrink-0" />
                   <span>Marketing Platform</span>
                 </li>
-                <li className='flex items-center gap-2'>
-                  <CircleCheck size={18} className='text-red-600 flex-shrink-0'/>
+                <li className="flex items-center gap-2">
+                  <CircleCheck size={18} className="text-red-600 flex-shrink-0" />
                   <span>24/7 Customer Support</span>
                 </li>
-                <li className='flex items-center gap-2'>
-                  <CircleCheck size={18} className='text-red-600 flex-shrink-0'/>
+                <li className="flex items-center gap-2">
+                  <CircleCheck size={18} className="text-red-600 flex-shrink-0" />
                   <span>Lifetime Support</span>
                 </li>
               </ul>
             </div>
+
             <button className="mt-8 border border-gray-300 rounded-full py-2 px-6 hover:bg-red-500 hover:text-white transition duration-300">
               Get Started →
             </button>
-          </div>
+          </motion.div>
 
-
-          <div className="bg-neutral-100 dark:bg-black dark:border-1 dark:border-[gray] rounded-2xl shadow-md border-r-2 border-b-2 border-[white] hover:border-red-600 dark:hover:border-gray-200 p-8 flex flex-col justify-between hover:shadow-xl hover:scale-105 transition-all ease-in-out duration-300 cursor-pointer">
+          {/* Premium */}
+          <motion.div
+            initial={{ opacity: 0, y: 80 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            viewport={{ once: true }}
+            className="bg-neutral-100 dark:bg-black dark:border-1 dark:border-[gray] rounded-2xl shadow-md border-r-2 border-b-2 border-[white] hover:border-red-600 dark:hover:border-gray-200 p-8 flex flex-col justify-between hover:shadow-xl hover:scale-105 transition-all ease-in-out duration-300 cursor-pointer"
+          >
             <div>
               <h3 className="text-lg font-semibold mb-4">Premium</h3>
               <h1 className="text-4xl font-bold">$ 45.00</h1>
               <p className="mb-6">Per Month</p>
               <ul className="space-y-3">
-                <li className='flex items-center gap-2'>
-                  <CircleCheck size={18} className='text-red-600 flex-shrink-0'/>
+                <li className="flex items-center gap-2">
+                  <CircleCheck size={18} className="text-red-600 flex-shrink-0" />
                   <span>5 Social Media Account</span>
                 </li>
-                <li className='flex items-center gap-2'>
-                  <CircleCheck size={18} className='text-red-600 flex-shrink-0'/>
+                <li className="flex items-center gap-2">
+                  <CircleCheck size={18} className="text-red-600 flex-shrink-0" />
                   <span>Free Platform Access</span>
                 </li>
-                <li className='flex items-center gap-2'>
-                  <CircleCheck size={18} className='text-red-600 flex-shrink-0'/>
+                <li className="flex items-center gap-2">
+                  <CircleCheck size={18} className="text-red-600 flex-shrink-0" />
                   <span>24/7 Customer Support</span>
                 </li>
               </ul>
             </div>
+
             <button className="mt-8 border border-gray-300 rounded-full py-2 px-6 hover:bg-red-500 hover:text-white transition duration-300">
               Get Started →
             </button>
-          </div>
+          </motion.div>
+
         </div>
       </div>
     </div>
