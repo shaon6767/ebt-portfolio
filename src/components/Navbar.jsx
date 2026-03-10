@@ -1,7 +1,12 @@
 import { useState } from "react";
 import logo from "../assets/logo.svg";
 import dark from "../assets/darklogo.svg";
-import {Instagram,Linkedin,Twitter,Facebook,Sun,Moon,Menu,X,ChevronDown} from "lucide-react";
+import { IoLogoInstagram } from "react-icons/io";
+import { GrFacebookOption } from "react-icons/gr";
+import { LiaLinkedinIn } from "react-icons/lia";
+import { VscTwitter } from "react-icons/vsc";
+
+import { FiSun,FiMoon,FiMenu,FiX,FiChevronDown} from "react-icons/fi";
 import { useTheme } from "../context/ThemeContext";
 
 const Navbar = () => {
@@ -19,7 +24,7 @@ const Navbar = () => {
       name: "Services",
       dropdown: [
         { name: "Web Design" },
-        { name: "UI/UX Design"},
+        { name: "UI/UX Design" },
         { name: "Web Development" }
       ]
     },
@@ -53,7 +58,6 @@ const Navbar = () => {
             <img src={dark} alt="Logo" className="hidden dark:block w-auto h-10" />
           </div>
 
-
           <div className="col-span-3">
             <ul className="flex items-center gap-4 lg:gap-8 justify-center font-rajdhani">
 
@@ -65,8 +69,8 @@ const Navbar = () => {
                     {item.name}
 
                     {item.dropdown && (
-                      <ChevronDown
-                        size={16}
+                      <FiChevronDown
+                        size={18}
                         className="transition-transform duration-300"
                       />
                     )}
@@ -82,8 +86,7 @@ const Navbar = () => {
                           <a
                             href="#"
                             className="
-                            flex items-center gap-3 px-4 py-3 text-sm dark:text-gray-300  hover:bg-red-500 hover:text-white transition ">
-                            {sub.icon}
+                            flex items-center gap-3 px-4 py-3 text-sm dark:text-gray-300 hover:bg-red-500 hover:text-white transition ">
                             {sub.name}
                           </a>
                         </li>
@@ -97,18 +100,34 @@ const Navbar = () => {
           </div>
 
           <div className="col-span-1">
+
             <div className="flex items-center gap-2 justify-end">
 
-              <Instagram size={40} className="p-3 bg-gray-200 dark:bg-gray-700 rounded-full dark:text-white hover:bg-red-500 hover:text-white transition-all cursor-pointer" />
-              <Linkedin size={40} className="p-3 bg-gray-200 dark:bg-gray-700 rounded-full dark:text-white hover:bg-red-500 hover:text-white transition-all cursor-pointer" />
-              <Twitter size={40} className="p-3 bg-gray-200 dark:bg-gray-700 rounded-full dark:text-white hover:bg-red-500 hover:text-white transition-all cursor-pointer" />
-              <Facebook size={40} className="p-3 bg-gray-200 dark:bg-gray-700 rounded-full dark:text-white hover:bg-red-500 hover:text-white transition-all cursor-pointer" />
+              <IoLogoInstagram 
+                size={42}
+                className="p-3 bg-gray-200 dark:bg-gray-700 rounded-full text-gray-800 dark:text-white hover:bg-red-500 hover:text-white transition-all cursor-pointer"
+              />
+
+              <LiaLinkedinIn
+                size={42}
+                className="p-3 bg-gray-200 dark:bg-gray-700 rounded-full text-gray-800 dark:text-white hover:bg-red-500 hover:text-white transition-all cursor-pointer"
+              />
+
+              <VscTwitter 
+                size={42}
+                className="p-3 bg-gray-200 dark:bg-gray-700 rounded-full text-gray-800 dark:text-white hover:bg-red-500 hover:text-white transition-all cursor-pointer"
+              />
+
+              <GrFacebookOption 
+                size={42}
+                className="p-3 bg-gray-200 dark:bg-gray-700 rounded-full text-gray-800 dark:text-white hover:bg-red-500 hover:text-white transition-all cursor-pointer"
+              />
 
               <button
                 onClick={toggleTheme}
                 className="p-3 rounded-lg bg-gray-200 dark:bg-gray-700 hover:bg-gray-500 dark:hover:bg-gray-800 transition-colors"
               >
-                {isDarkMode ? <Sun size={15} /> : <Moon size={15} />}
+                {isDarkMode ? <FiSun size={18} /> : <FiMoon size={18} />}
               </button>
 
             </div>
@@ -129,14 +148,14 @@ const Navbar = () => {
               onClick={toggleTheme}
               className="p-2 rounded-lg bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors"
             >
-              {isDarkMode ? <Sun size={20} /> : <Moon size={20} />}
+              {isDarkMode ? <FiSun size={24} /> : <FiMoon size={24} />}
             </button>
 
             <button
               onClick={toggleMobileMenu}
               className="p-2 rounded-lg bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors"
             >
-              {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+              {isMobileMenuOpen ? <FiX size={28} /> : <FiMenu size={28} />}
             </button>
 
           </div>
@@ -162,10 +181,12 @@ const Navbar = () => {
             </ul>
 
             <div className="flex items-center justify-center gap-4 pt-4 border-t border-gray-300 dark:border-gray-700">
-              <Instagram size={36} className="p-2 bg-gray-200 dark:bg-gray-700 rounded-full dark:text-white hover:bg-red-500 hover:text-white transition-all cursor-pointer" />
-              <Linkedin size={36} className="p-2 bg-gray-200 dark:bg-gray-700 rounded-full dark:text-white hover:bg-red-500 hover:text-white transition-all cursor-pointer" />
-              <Twitter size={36} className="p-2 bg-gray-200 dark:bg-gray-700 rounded-full dark:text-white hover:bg-red-500 hover:text-white transition-all cursor-pointer" />
-              <Facebook size={36} className="p-2 bg-gray-200 dark:bg-gray-700 rounded-full dark:text-white hover:bg-red-500 hover:text-white transition-all cursor-pointer" />
+
+              <IoLogoInstagram  size={38} className="p-2 bg-gray-200 dark:bg-gray-700 rounded-full text-gray-800 dark:text-white hover:bg-red-500 hover:text-white transition-all cursor-pointer" />
+              <LiaLinkedinIn  size={38} className="p-2 bg-gray-200 dark:bg-gray-700 rounded-full text-gray-800 dark:text-white hover:bg-red-500 hover:text-white transition-all cursor-pointer" />
+              <VscTwitter  size={38} className="p-2 bg-gray-200 dark:bg-gray-700 rounded-full text-gray-800 dark:text-white hover:bg-red-500 hover:text-white transition-all cursor-pointer" />
+              <GrFacebookOption  size={38} className="p-2 bg-gray-200 dark:bg-gray-700 rounded-full text-gray-800 dark:text-white hover:bg-red-500 hover:text-white transition-all cursor-pointer" />
+
             </div>
 
           </div>

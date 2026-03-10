@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import CountUp from "react-countup";
+import HoverBorder from "./HoverBorder";
 
 const Projects = () => {
   return (
@@ -13,18 +14,14 @@ const Projects = () => {
         viewport={{ once: true }}
       >
 
+        {/* LEFT SIDE */}
         <div className="bg-gray-100 dark:bg-gradient-to-r from-gray-900 to-red-600 rounded-3xl px-6 sm:px-10 md:px-12 py-8">
-          
+
           <div className="flex flex-col sm:flex-row sm:items-center gap-6 sm:gap-10">
 
             <div>
               <span className="text-[80px] sm:text-[120px] md:text-[160px] lg:text-[180px] font-bold text-red-500 leading-none">
-                <CountUp
-                  end={25}
-                  duration={1.8}
-                  enableScrollSpy
-                  scrollSpyOnce
-                />
+                <CountUp end={25} duration={1.8} enableScrollSpy scrollSpyOnce />
               </span>
             </div>
 
@@ -36,56 +33,66 @@ const Projects = () => {
 
           </div>
 
-          <p className="mt-6 max-w-lg text-gray-600 leading-relaxed text-sm sm:text-base">
-            Business consulting consultants provide expert advice and guide
-            businesses to help improve their performance efficiency.
+          <p className="mt-6 max-w-[490px] text-gray-600 leading-relaxed text-sm sm:text-base">
+            Business consulting consultants provide expert advice and guida the
+            a businesses to help theme their performance efficiency
           </p>
 
         </div>
 
+        {/* RIGHT SIDE CARDS */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
 
-          <div className="bg-gray-100 dark:bg-black rounded-2xl p-6 md:p-8 border-r-2 border-r-red-500 border-b-2 border-b-red-500 shadow-lg hover:scale-105 transition-all ease-in-out duration-200">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
-              <CountUp end={20} duration={1.8} enableScrollSpy scrollSpyOnce />K+
-            </h2>
-            <p className="mt-2 text-gray-600 text-sm md:text-base dark:text-white">
-              Our Project Complete
-            </p>
-          </div>
+          <HoverBorder>
+            <div className="bg-gray-100 dark:bg-black rounded-2xl p-6 md:p-9 transition-all ease-in-out duration-200">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
+                <CountUp end={20} duration={1.8} enableScrollSpy scrollSpyOnce />K+
+              </h2>
+              <p className="mt-2 text-gray-600 text-sm md:text-base dark:text-white">
+                Our Project Complete
+              </p>
+            </div>
+          </HoverBorder>
 
-          <div className="bg-gray-100 dark:bg-black rounded-2xl p-6 md:p-8 border-r-2 border-r-red-500 border-b-2 border-b-red-500 shadow-lg hover:scale-105 transition-all ease-in-out duration-200">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
-              <CountUp end={10} duration={1.8} enableScrollSpy scrollSpyOnce />K+
-            </h2>
-            <p className="mt-2 text-gray-600 text-sm md:text-base dark:text-white">
-              Our Natural Products
-            </p>
-          </div>
+          <HoverBorder>
+            <div className="bg-gray-100 dark:bg-black rounded-2xl p-6 md:p-9 transition-all ease-in-out duration-200">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
+                <CountUp end={10} duration={1.8} enableScrollSpy scrollSpyOnce />K+
+              </h2>
+              <p className="mt-2 text-gray-600 text-sm md:text-base dark:text-white">
+                Our Natural Products
+              </p>
+            </div>
+          </HoverBorder>
 
-          <div className="bg-gray-100 dark:bg-black rounded-2xl p-6 md:p-8 border-r-2 border-r-red-500 border-b-2 border-b-red-500 shadow-lg hover:scale-105 transition-all ease-in-out duration-200">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
-              <CountUp end={200} duration={1.8} enableScrollSpy scrollSpyOnce />+
-            </h2>
-            <p className="mt-2 text-gray-600 text-sm md:text-base dark:text-white">
-              Clients Reviews
-            </p>
-          </div>
+          <HoverBorder>
+            <div className="bg-gray-100 dark:bg-black rounded-2xl p-6 md:p-9 transition-all ease-in-out duration-200">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
+                <CountUp end={200} duration={1.8} enableScrollSpy scrollSpyOnce />+
+              </h2>
+              <p className="mt-2 text-gray-600 text-sm md:text-base dark:text-white">
+                Clients Reviews
+              </p>
+            </div>
+          </HoverBorder>
 
-          <div className="bg-gray-100 dark:bg-black rounded-2xl p-6 md:p-8 border-r-2 border-r-red-500 border-b-2 border-b-red-500 shadow-lg hover:scale-105 transition-all ease-in-out duration-200">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
-              <CountUp
-                end={1000}
-                duration={1.8}
-                separator=","
-                enableScrollSpy
-                scrollSpyOnce
-              />+
-            </h2>
-            <p className="mt-2 text-gray-600 text-sm md:text-base dark:text-white">
-              Our Satisfied Clients
-            </p>
-          </div>
+          <HoverBorder>
+            <div className="bg-gray-100 dark:bg-black rounded-2xl p-6 md:p-9 transition-all ease-in-out duration-200">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
+                <CountUp
+                  end={1000}
+                  duration={1.8}
+                  separator=","
+                  enableScrollSpy
+                  scrollSpyOnce
+                />
+                +
+              </h2>
+              <p className="mt-2 text-gray-600 text-sm md:text-base dark:text-white">
+                Our Satisfied Clients
+              </p>
+            </div>
+          </HoverBorder>
 
         </div>
 

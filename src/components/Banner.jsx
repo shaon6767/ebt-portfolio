@@ -1,6 +1,10 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { MoveRight, Instagram, Linkedin, Twitter, Facebook, MessageCircleCheck, X, Phone, Mail, LocateFixed } from 'lucide-react';
+import { MoveRight, MessageCircleCheck, X, Phone, Mail, LocateFixed } from 'lucide-react';
+import { IoLogoInstagram } from "react-icons/io";
+import { GrFacebookOption } from "react-icons/gr";
+import { LiaLinkedinIn } from "react-icons/lia";
+import { VscTwitter } from "react-icons/vsc";
 import ban from "../assets/banner.png";
 import sideimg from "../assets/sideimg.png";
 import sidebar from "../assets/sidebar.svg";
@@ -63,10 +67,11 @@ const Banner = () => {
               <p className='text-sm lg:text-base'>Find me on</p>
 
               <div className="flex items-center gap-2 lg:gap-3">
-                <Instagram size={32} className="p-2 bg-gray-200 dark:bg-gray-600 rounded-full dark:text-white hover:text-white hover:bg-gray-400 dark:hover:bg-gray-500 transition-all cursor-pointer" />
-                <Linkedin size={32} className="p-2 bg-gray-200 dark:bg-gray-600 rounded-full dark:text-white hover:text-white hover:bg-gray-400 dark:hover:bg-gray-500 transition-all cursor-pointer" />
-                <Twitter size={32} className="p-2 bg-gray-200 dark:bg-gray-600 rounded-full dark:text-white hover:text-white hover:bg-gray-400 dark:hover:bg-gray-500 transition-all cursor-pointer" />
-                <Facebook size={32} className="p-2 bg-gray-200 dark:bg-gray-600 rounded-full dark:text-white hover:text-white hover:bg-gray-400 dark:hover:bg-gray-500 transition-all cursor-pointer" />
+
+                <IoLogoInstagram size={34} className="p-2 bg-gray-200 dark:bg-gray-700 rounded-full text-gray-800 dark:text-white hover:bg-red-500 hover:text-white transition-all cursor-pointer" />
+                <LiaLinkedinIn size={34} className="p-2 bg-gray-200 dark:bg-gray-700 rounded-full text-gray-800 dark:text-white hover:bg-red-500 hover:text-white transition-all cursor-pointer" />
+                <VscTwitter  size={34} className="p-2 bg-gray-200 dark:bg-gray-700 rounded-full text-gray-800 dark:text-white hover:bg-red-500 hover:text-white transition-all cursor-pointer" />
+                <GrFacebookOption size={34} className="p-2 bg-gray-200 dark:bg-gray-700 rounded-full text-gray-800 dark:text-white hover:bg-red-500 hover:text-white transition-all cursor-pointer" />
               </div>
             </div>
           </div>
@@ -105,10 +110,10 @@ const Banner = () => {
               <p className='text-sm'>Find me on</p>
 
               <div className="flex items-center gap-3">
-                <Instagram size={40} className="p-2 bg-gray-200 dark:bg-gray-600 rounded-full dark:text-white hover:text-white hover:bg-gray-400 dark:hover:bg-gray-500 transition-all cursor-pointer" />
-                <Linkedin size={40} className="p-2 bg-gray-200 dark:bg-gray-600 rounded-full dark:text-white hover:text-white hover:bg-gray-400 dark:hover:bg-gray-500 transition-all cursor-pointer" />
-                <Twitter size={40} className="p-2 bg-gray-200 dark:bg-gray-600 rounded-full dark:text-white hover:text-white hover:bg-gray-400 dark:hover:bg-gray-500 transition-all cursor-pointer" />
-                <Facebook size={40} className="p-2 bg-gray-200 dark:bg-gray-600 rounded-full dark:text-white hover:text-white hover:bg-gray-400 dark:hover:bg-gray-500 transition-all cursor-pointer" />
+                <IoLogoInstagram size={40} className="p-2 bg-gray-200 dark:bg-gray-600 rounded-full dark:text-white hover:text-white hover:bg-red-500 dark:hover:bg-gray-500 transition-all cursor-pointer" />
+                <LiaLinkedinIn size={40} className="p-2 bg-gray-200 dark:bg-gray-600 rounded-full dark:text-white hover:text-white hover:bg-red-500 dark:hover:bg-gray-500 transition-all cursor-pointer" />
+                <VscTwitter size={40} className="p-2 bg-gray-200 dark:bg-gray-600 rounded-full dark:text-white hover:text-white hover:bg-red-500 dark:hover:bg-gray-500 transition-all cursor-pointer" />
+                <GrFacebookOption size={40} className="p-2 bg-gray-200 dark:bg-gray-600 rounded-full dark:text-white hover:text-white hover:bg-red-500 dark:hover:bg-gray-500 transition-all cursor-pointer" />
               </div>
             </div>
 

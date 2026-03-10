@@ -1,6 +1,13 @@
 import logo from "../assets/logo.svg"
 import dark from "../assets/darklogo.svg"
-import { Mail, MapPin, Phone, Instagram, Linkedin, Twitter, Facebook } from "lucide-react"
+import { Mail } from "lucide-react"
+import { MdCall } from "react-icons/md";
+import { IoMdMail } from "react-icons/io";
+import { MdLocationOn } from "react-icons/md";
+import { IoLogoInstagram } from "react-icons/io";
+import { GrFacebookOption } from "react-icons/gr";
+import { LiaLinkedinIn } from "react-icons/lia";
+import { VscTwitter } from "react-icons/vsc";
 import ftr from "../assets/ftr.png"
 
 const Footer = () => {
@@ -13,7 +20,7 @@ const Footer = () => {
             <img src={logo} alt="logo" className="w-32 block dark:hidden relative z-10" />
             <img src={dark} alt="logo" className="w-32 hidden dark:block relative z-10" />
             <div className="absolute left-[-40px] md:left-[-80px] lg:left-[-150px] top-[-60px] hidden dark:block ">
-              <img src={ftr} alt="" className="w-90 h-90 pointer-events-none"/>
+              <img src={ftr} alt="" className="w-90 h-90 pointer-events-none" />
             </div>
           </div>
 
@@ -48,33 +55,25 @@ const Footer = () => {
           <h3 className="font-semibold text-lg mb-6">Contact</h3>
           <div className="space-y-4 text-sm">
             <div className="flex items-center gap-3">
-              <Mail size={18} />
+              <IoMdMail  size={34} className=" p-2 bg-none border-2 border-[#d5cfcf] rounded-full"/>
               <p className="break-all">nafiiz125@gmail.com</p>
             </div>
             <div className="flex items-center gap-3">
-              <MapPin size={18} />
+              <MdLocationOn  size={34} className=" p-2 bg-none border-2 border-[#d5cfcf] rounded-full"/>
               <p>3891 Ranchview Dr. Richardson</p>
             </div>
             <div className="flex items-center gap-3">
-              <Phone size={18} />
+              <MdCall  size={34} className=" p-2 bg-none border-2 border-[#d5cfcf] rounded-full"/>
               <p>01245789321</p>
             </div>
           </div>
 
 
           <div className="flex gap-4 mt-6">
-            <div className="p-2 bg-neutral-200 rounded-full shadow cursor-pointer hover:bg-neutral-300 dark:bg-neutral-600 transition">
-              <Instagram size={16} />
-            </div>
-            <div className="p-2 bg-neutral-200 rounded-full shadow cursor-pointer hover:bg-neutral-300 dark:bg-neutral-600 transition">
-              <Linkedin size={16} />
-            </div>
-            <div className="p-2 bg-neutral-200 rounded-full shadow cursor-pointer hover:bg-neutral-300 dark:bg-neutral-600 transition">
-              <Twitter size={16} />
-            </div>
-            <div className="p-2 bg-neutral-200 rounded-full shadow cursor-pointer hover:bg-neutral-300 dark:bg-neutral-600 transition">
-              <Facebook size={16} />
-            </div>
+            <IoLogoInstagram size={32} className="p-2 bg-gray-200 dark:bg-gray-600 rounded-full dark:text-white hover:text-white hover:bg-red-500 dark:hover:bg-gray-500 transition-all cursor-pointer" />
+            <LiaLinkedinIn size={32} className="p-2 bg-gray-200 dark:bg-gray-600 rounded-full dark:text-white hover:text-white hover:bg-red-500 dark:hover:bg-gray-500 transition-all cursor-pointer" />
+            <VscTwitter size={32} className="p-2 bg-gray-200 dark:bg-gray-600 rounded-full dark:text-white hover:text-white hover:bg-red-500 dark:hover:bg-gray-500 transition-all cursor-pointer" />
+            <GrFacebookOption size={32} className="p-2 bg-gray-200 dark:bg-gray-600 rounded-full dark:text-white hover:text-white hover:bg-red-500 dark:hover:bg-gray-500 transition-all cursor-pointer" />
           </div>
         </div>
       </div>

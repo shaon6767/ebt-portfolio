@@ -1,11 +1,9 @@
 import test from "../assets/testimonial.svg";
-import one from "../assets/blogone.png";
-import two from "../assets/blgone.png";
-import three from "../assets/bloftwo.png";
 import { ChevronRight } from "lucide-react";
-
+import one from "../assets/blogone.png"
+import two from "../assets/blogtwo.png"
+import three from "../assets/blogthree.png"
 import { motion } from "framer-motion";
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 
@@ -13,7 +11,7 @@ import "swiper/css";
 
 const Blog = () => {
   return (
-    <div className="w-full bg-neutral-100 dark:bg-black py-16 px-6 md:px-16">
+    <div className="w-full dark:bg-black py-16 px-6 md:px-16">
 
       {/* TESTIMONIAL */}
       <motion.div
@@ -24,7 +22,7 @@ const Blog = () => {
         viewport={{ once: true }}
       >
 
-        <p className="text-xs tracking-widest text-red-500 mb-3">
+        <p className="text-xs tracking-widest font-semibold text-red-500 mb-3">
           OUR TESTIMONIAL
         </p>
 
@@ -38,14 +36,14 @@ const Blog = () => {
           <div className="bg-neutral-200 dark:bg-[#141414] p-8 rounded-2xl shadow-sm border-r-2 border-red-500 text-left space-y-12">
             <img src={test} alt="" />
 
-            <p>
+            <p className="text-gray-600">
               A personal portfolio is a curated collection of an individual's
               professional work, showcasing their skills.
             </p>
 
             <div>
               <p className="font-semibold">Cameron Williamson</p>
-              <p className="text-sm">UX/UI Designer</p>
+              <p className="text-sm text-gray-600">UX/UI Designer</p>
             </div>
           </div>
 
@@ -53,14 +51,14 @@ const Blog = () => {
           <div className="bg-neutral-200 dark:bg-[#141414] p-8 rounded-2xl shadow-sm border-r-2 border-red-500 text-left space-y-12">
             <img src={test} alt="" />
 
-            <p>
+            <p className="text-gray-600">
               A personal portfolio is a curated collection of an individual's
               professional work, showcasing their skills.
             </p>
 
             <div>
               <p className="font-semibold">Leslie Alexander</p>
-              <p className="text-sm">UX/UI Designer</p>
+              <p className="text-sm text-gray-600">UX/UI Designer</p>
             </div>
           </div>
 
@@ -87,7 +85,7 @@ const Blog = () => {
 
                 <img src={test} alt="" />
 
-                <p className="leading-[30px] w-[420px]">
+                <p className="leading-[30px] w-[420px] text-gray-600">
                   A personal portfolio is a curated collection of an individual's
                   professional work, showcasing their skilA personal portfolio is a
                   curated collection of an individual's professional work,
@@ -96,7 +94,7 @@ const Blog = () => {
 
                 <div>
                   <p className="font-semibold mb-2">Cameron Williamson</p>
-                  <p className="text-sm">UX/UI Designer</p>
+                  <p className="text-sm text-gray-600">UX/UI Designer</p>
                 </div>
 
               </div>
@@ -109,7 +107,7 @@ const Blog = () => {
 
                 <img src={test} alt="" />
 
-                <p className="leading-[30px] w-[420px]">
+                <p className="leading-[30px] w-[420px] text-gray-600">
                   A personal portfolio is a curated collection of an individual's
                   professional work, showcasing their skilA personal portfolio is a
                   curated collection of an individual's professional work,
@@ -118,7 +116,7 @@ const Blog = () => {
 
                 <div>
                   <p className="font-semibold mb-2">Leslie Alexander</p>
-                  <p className="text-sm">UX/UI Designer</p>
+                  <p className="text-sm text-gray-600">UX/UI Designer</p>
                 </div>
 
               </div>
@@ -131,7 +129,7 @@ const Blog = () => {
 
                 <img src={test} alt="" />
 
-                <p className="leading-[30px] w-[420px]">
+                <p className="leading-[30px] w-[420px] text-gray-600">
                   A personal portfolio is a curated collection of an individual's
                   professional work, showcasing their skilA personal portfolio is a
                   curated collection of an individual's professional work,
@@ -140,7 +138,7 @@ const Blog = () => {
 
                 <div>
                   <p className="font-semibold mb-2">Cameron Williamson</p>
-                  <p className="text-sm">UX/UI Designer</p>
+                  <p className="text-sm text-gray-600">UX/UI Designer</p>
                 </div>
 
               </div>
@@ -152,7 +150,7 @@ const Blog = () => {
 
                 <img src={test} alt="" />
 
-                <p className="leading-[30px] w-[420px]">
+                <p className="leading-[30px] w-[420px] text-gray-600">
                   A personal portfolio is a curated collection of an individual's
                   professional work, showcasing their skilA personal portfolio is a
                   curated collection of an individual's professional work,
@@ -161,7 +159,7 @@ const Blog = () => {
 
                 <div>
                   <p className="font-semibold mb-2">Leslie Alexander</p>
-                  <p className="text-sm">UX/UI Designer</p>
+                  <p className="text-sm text-gray-600">UX/UI Designer</p>
                 </div>
 
               </div>
@@ -183,7 +181,7 @@ const Blog = () => {
         viewport={{ once: true }}
       >
 
-        <p className="text-xs tracking-widest text-red-500 mb-3">
+        <p className="text-xs tracking-widest font-semibold text-red-500 mb-3">
           BLOG AND NEWS
         </p>
 
@@ -218,7 +216,7 @@ const Blog = () => {
             className="bg-white dark:bg-[#141414] p-2 rounded-2xl shadow-sm overflow-hidden text-left"
           >
 
-            <img src={three} alt="" />
+            <img src={two} alt="" />
 
             <div className="p-5">
               <p className="font-bold mb-3 w-[275px] leading-7">
@@ -238,7 +236,7 @@ const Blog = () => {
             className="bg-white dark:bg-[#141414] p-2 rounded-2xl shadow-sm overflow-hidden text-left"
           >
 
-            <img src={two} alt="" />
+            <img src={three} alt="" />
 
             <div className="p-5">
               <p className="font-bold mb-3 w-[275px] leading-7">

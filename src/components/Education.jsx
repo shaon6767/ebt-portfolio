@@ -9,11 +9,12 @@ import six from "../assets/upwork.svg"
 import seven from "../assets/amazon.svg"
 import eight from "../assets/asana.svg"
 import line from "../assets/line.svg"
+import HoverBorder from "./HoverBorder"
 
 const Education = () => {
   return (
-    <div className="py-20 px-4">
-      
+    <div className="pb-26 px-4">
+
       <motion.div
         className="max-w-7xl mx-auto"
         initial={{ opacity: 0, y: 80 }}
@@ -35,41 +36,49 @@ const Education = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 
-          <div className="bg-[#F4F4F4] dark:bg-[#141414] p-8 rounded-2xl shadow-md border-b-2 dark:border-none border-r-2 border-red-400">
-            <h4 className="text-md text-black dark:text-white">Trainer Marketing</h4>
-            <p className="text-md font-semibold mt-1">2005-2009</p>
-            <p className="text-gray-500 text-[17px] mt-4">
-              A personal portfolio is a curated collection of an individual's
-              professional work, showcasing their skills, experience & personal projects.
-            </p>
-          </div>
+          <HoverBorder>
+            <div className="bg-[#F4F4F4] dark:bg-[#141414] p-10 rounded-2xl">
+              <h4 className="text-md text-black dark:text-white">Trainer Marketing</h4>
+              <p className="text-md font-bold mt-2">2005-2009</p>
+              <p className="text-gray-500 text-[17px] mt-4">
+                A personal portfolio is a curated collection of an individual's
+                professional work, showcasing their skills, experience & personal projects.
+              </p>
+            </div>
+          </HoverBorder>
 
-          <div className="bg-[#F4F4F4] dark:bg-[#141414] p-8 rounded-2xl shadow-md border-b-2 dark:border-none border-r-2 border-red-400">
-            <h4 className="text-md">Assistant Director</h4>
-            <p className="text-md font-semibold mt-1">2010-2014</p>
-            <p className="text-gray-500 text-[17px] mt-4">
-              Each project here showcases my commitment to excellence and
-              adaptability, tailored to meet each client's unique needs.
-            </p>
-          </div>
+          <HoverBorder>
+            <div className="bg-[#F4F4F4] dark:bg-[#141414] p-10 rounded-2xl">
+              <h4 className="text-md">Assistant Director</h4>
+              <p className="text-md font-bold mt-2">2010-2014</p>
+              <p className="text-gray-500 text-[17px] mt-4">
+                Each project here showcases my commitment to excellence and
+                adaptability, tailored to meet each client's unique needs.
+              </p>
+            </div>
+          </HoverBorder>
 
-          <div className="bg-[#F4F4F4] dark:bg-[#141414] p-8 rounded-2xl shadow-md border-b-2 dark:border-none border-r-2 border-red-400">
-            <h4 className="text-md text-gray-500">Design Assistant</h4>
-            <p className="text-md font-semibold mt-1">2008-2012</p>
-            <p className="text-gray-500 text-[17px] mt-4">
-              I've had the privilege of working with various clients, from startups
-              to established companies, helping bring their visions to life.
-            </p>
-          </div>
+          <HoverBorder>
+            <div className="bg-[#F4F4F4] dark:bg-[#141414] p-10 rounded-2xl">
+              <h4 className="text-md">Design Assistant</h4>
+              <p className="text-md font-bold mt-2">2008-2012</p>
+              <p className="text-gray-500 text-[17px] mt-4">
+                I've had the privilege of working with various clients, from startups
+                to established companies, helping bring their visions to life.
+              </p>
+            </div>
+          </HoverBorder>
 
-          <div className="bg-[#F4F4F4] dark:bg-[#141414] p-8 rounded-2xl shadow-md border-b-2 dark:border-none border-r-2 border-red-400">
-            <h4 className="text-md">Design Assistant</h4>
-            <p className="text-md font-semibold mt-1">2008-2012</p>
-            <p className="text-gray-500 text-[17px] mt-4">
-              Each project here showcases my commitment to excellence and
-              adaptability, tailored to meet each client's needs.
-            </p>
-          </div>
+          <HoverBorder>
+            <div className="bg-[#F4F4F4] dark:bg-[#141414] p-10 rounded-2xl">
+              <h4 className="text-md">Design Assistant</h4>
+              <p className="text-md font-bold mt-2">2008-2012</p>
+              <p className="text-gray-500 text-[17px] mt-4">
+                Each project here showcases my commitment to excellence and
+                adaptability, tailored to meet each client's needs.
+              </p>
+            </div>
+          </HoverBorder>
 
         </div>
 
