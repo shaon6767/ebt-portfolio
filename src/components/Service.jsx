@@ -1,9 +1,17 @@
+import { motion } from "framer-motion";
 import man from "../assets/Margin.png";
 
 const Service = () => {
   return (
     <section className="w-full bg-white dark:bg-black py-14 sm:py-16 lg:py-20 px-4 sm:px-6 md:px-12 lg:px-16 overflow-hidden">
-      <div className="max-w-7xl mx-auto">
+      
+      <motion.div
+        className="max-w-7xl mx-auto"
+        initial={{ opacity: 0, y: 80 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+      >
 
         <div className="text-center max-w-3xl mx-auto">
           <p className="text-red-500 tracking-widest uppercase text-xs sm:text-sm font-semibold">
@@ -57,7 +65,6 @@ const Service = () => {
 
           </div>
 
-
           <div className="flex justify-center lg:justify-end">
             <img
               src={man}
@@ -68,7 +75,8 @@ const Service = () => {
 
         </div>
 
-      </div>
+      </motion.div>
+
     </section>
   );
 };

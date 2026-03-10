@@ -3,10 +3,7 @@ import { CircleCheck } from 'lucide-react';
 const Plans = () => {
   return (
     <div className="py-16 px-4">
-      {/* Removed min-h-screen and flex centering from parent */}
       <div className="max-w-7xl mx-auto">
-        {/* Added mx-auto for proper centering */}
-        
         <div className="text-center mb-12">
           <p className="text-red-500 uppercase tracking-widest text-sm font-semibold">
             My Price Plan
@@ -19,7 +16,7 @@ const Plans = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-18">
           
-          {/* Card 1 */}
+          
           <div className="bg-neutral-100 dark:bg-black dark:border-1 dark:border-[gray] rounded-2xl shadow-md border-r-2 border-b-2 border-[white] hover:border-red-600 dark:hover:border-gray-200 p-8 flex flex-col justify-between hover:shadow-xl hover:scale-105 transition-all ease-in-out duration-300 cursor-pointer">
             <div>
               <h3 className="text-lg font-semibold mb-4">Starter</h3>
@@ -45,7 +42,7 @@ const Plans = () => {
             </button>
           </div>
 
-          {/* Card 2 */}
+
           <div className="bg-neutral-100 dark:bg-black dark:border-1 dark:border-[gray] rounded-2xl shadow-md border-r-2 border-b-2 border-[white] hover:border-red-600 dark:hover:border-gray-200 p-8 flex flex-col justify-between hover:shadow-xl hover:scale-105 lg:hover:scale-120 transition-all scale:0 md:scale-105  lg:scale-120 ease-in-out duration-300 cursor-pointer">
             <div>
               <h3 className="text-lg font-semibold mb-4">Basic</h3>
@@ -79,7 +76,7 @@ const Plans = () => {
             </button>
           </div>
 
-          {/* Card 3 */}
+
           <div className="bg-neutral-100 dark:bg-black dark:border-1 dark:border-[gray] rounded-2xl shadow-md border-r-2 border-b-2 border-[white] hover:border-red-600 dark:hover:border-gray-200 p-8 flex flex-col justify-between hover:shadow-xl hover:scale-105 transition-all ease-in-out duration-300 cursor-pointer">
             <div>
               <h3 className="text-lg font-semibold mb-4">Premium</h3>
@@ -104,7 +101,6 @@ const Plans = () => {
               Get Started →
             </button>
           </div>
-
         </div>
       </div>
     </div>

@@ -1,7 +1,16 @@
+import { motion } from "framer-motion";
+
 const Projects = () => {
   return (
     <section className="w-full bg-white dark:bg-black py-16 px-4 sm:px-6 md:px-12 lg:px-16">
-      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-10 items-center">
+
+      <motion.div
+        className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-10 items-center"
+        initial={{ opacity: 0, y: 80 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+      >
 
         <div className="bg-gray-100 dark:bg-gradient-to-r from-gray-900  to-red-600 rounded-3xl px-6 sm:px-10 md:px-12 py-8">
           
@@ -60,7 +69,8 @@ const Projects = () => {
 
         </div>
 
-      </div>
+      </motion.div>
+
     </section>
   );
 };

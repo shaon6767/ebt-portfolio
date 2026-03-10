@@ -1,3 +1,4 @@
+import { motion } from "framer-motion"
 import bulb from "../assets/bulb.svg"
 import pen from "../assets/pencil.svg"
 import msg from "../assets/Msg.svg"
@@ -37,7 +38,14 @@ const Experience = () => {
 
   return (
     <section className="py-8 lg:py-20 mt-8 md:mt-12 lg:mt-[100px] px-6 md:px-16 transition-colors duration-500">
-      <div className="max-w-7xl mx-auto grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+      
+      <motion.div
+        className="max-w-7xl mx-auto grid gap-8 sm:grid-cols-2 lg:grid-cols-4"
+        initial={{ opacity: 0, y: 80 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+      >
         {Experience.map((item, index) => (
           <div
             key={index}
@@ -54,7 +62,8 @@ const Experience = () => {
             </p>
           </div>
         ))}
-      </div>
+      </motion.div>
+
     </section>
   );
 };

@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
+import { motion } from "framer-motion"
 
 const skillsLeft = [
   { name: "PHOTOSHOP", percent: 100 },
@@ -17,7 +18,7 @@ const skillsRight = [
 const SkillBar = ({ name, percent, animate }) => (
   <div className="mb-8 font-rajdhani">
     <div className="flex justify-between mb-2">
-      <span className="text-sm font-medium  dark:text-white">
+      <span className="text-sm font-medium dark:text-white">
         {name}
       </span>
       <span className="text-sm font-medium dark:text-white">
@@ -46,13 +47,11 @@ const Skills = () => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          console.log("Section entered - starting animation")
           setHasBeenVisible(true)
           setTimeout(() => {
             setAnimate(true)
           }, 50)
         } else {
-          console.log("Section left - resetting animation")
           setHasBeenVisible(false)
           setAnimate(false)
         }
@@ -72,7 +71,14 @@ const Skills = () => {
       ref={sectionRef}
       className="w-full py-20 px-6 md:px-16"
     >
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16">
+
+      <motion.div
+        className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16"
+        initial={{ opacity: 0, y: 80 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+      >
         
         <div>
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-10">
@@ -100,7 +106,8 @@ const Skills = () => {
           ))}
         </div>
 
-      </div>
+      </motion.div>
+
     </section>
   )
 }

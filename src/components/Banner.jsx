@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { motion } from "framer-motion";
 import { MoveRight, Instagram, Linkedin, Twitter, Facebook, MessageCircleCheck, X, Phone, Mail, LocateFixed } from 'lucide-react';
 import ban from "../assets/banner.png";
 import sideimg from "../assets/sideimg.png";
@@ -13,7 +14,13 @@ const Banner = () => {
   return (
     <section className='dark:bg-black dark:text-white relative overflow-hidden py-10 md:py-0 font-rajdhani'>
 
-      <div className='max-w-7xl px-4 mx-auto'>
+      <motion.div
+        className='max-w-7xl px-4 mx-auto'
+        initial={{ opacity: 0, y: 80 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+      >
 
         <div className="hidden md:grid grid-cols-5 gap-4">
           <div className="col-span-1 space-y-4">
@@ -34,7 +41,7 @@ const Banner = () => {
             <div className="flex justify-center items-center h-full">
               <img src={ban} alt="" className='max-w-full h-auto object-contain z-30' />
               <div className="absolute bottom-[-20px] transform -translate-x-[-25px] hidden lg:block">
-                <div className="">
+                <div>
                   <h1 className="outline-title text-white dark:text-white pb-2 text-[160px] font-bold text-center -z-10">
                     WEB DESIGN
                   </h1>
@@ -108,7 +115,7 @@ const Banner = () => {
           </div>
         </div>
 
-      </div>
+      </motion.div>
 
 
       <div className="fixed right-3 bottom-5 z-50">
@@ -121,6 +128,7 @@ const Banner = () => {
       {openSidebar && (
         <div onClick={() => setOpenSidebar(false)} className="fixed inset-0 bg-black/40 z-40" />
       )}
+
 
       <div className={`fixed top-0 right-0 h-full w-[320px] overflow-scroll font-rajdhani bg-neutral-100 dark:bg-black shadow-2xl z-50 transition-transform duration-300 ${openSidebar ? "translate-x-0" : "translate-x-full"}`}>
 
@@ -136,7 +144,7 @@ const Banner = () => {
 
         <div className="p-5 space-y-4">
 
-          <img src={sideimg} alt="" className="" />
+          <img src={sideimg} alt="" />
 
           <h3 className="font-semibold text-lg">
             Freelancer delivering exceptional Webflow, and Next.js solutions.
@@ -176,17 +184,6 @@ const Banner = () => {
 
           </div>
 
-          <div className="pt-4">
-            <p className="text-sm mb-3">FIND WITH ME</p>
-
-            <div className="flex gap-3">
-              <Instagram size={34} className="p-2 bg-gray-200 dark:bg-gray-600 rounded-full cursor-pointer" />
-              <Linkedin size={34} className="p-2 bg-gray-200 dark:bg-gray-600 rounded-full cursor-pointer" />
-              <Twitter size={34} className="p-2 bg-gray-200 dark:bg-gray-600 rounded-full cursor-pointer" />
-              <Facebook size={34} className="p-2 bg-gray-200 dark:bg-gray-600 rounded-full cursor-pointer" />
-            </div>
-          </div>
-
         </div>
 
       </div>
@@ -195,7 +192,6 @@ const Banner = () => {
       <div className="absolute right-4 top-[15%] md:top-[25%]">
         <img src={sidebar} alt="" />
       </div>
-
 
     </section>
   );
