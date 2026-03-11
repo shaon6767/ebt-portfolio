@@ -35,7 +35,7 @@ const Service = () => {
           <div className="space-y-4 mt-0 md:mt-3 lg:mt-6">
 
             <HoverBorder>
-              <div className="bg-gray-100 dark:bg-black rounded-2xl p-6 sm:p-8 transition-all duration-200">
+              <div className="bg-gray-100 dark:bg-[#141414] rounded-2xl p-6 sm:p-8 transition-all duration-200">
                 <h3 className="text-base sm:text-lg font-bold text-gray-900 dark:text-white">
                   01. A Portfolio of Creativity
                 </h3>
@@ -47,7 +47,7 @@ const Service = () => {
             </HoverBorder>
 
             <HoverBorder>
-              <div className="bg-gray-100 dark:bg-black rounded-2xl p-6 sm:p-8 transition-all duration-200">
+              <div className="bg-gray-100 dark:bg-[#141414] rounded-2xl p-6 sm:p-8 transition-all duration-200">
                 <h3 className="text-base sm:text-lg font-bold text-gray-900 dark:text-white">
                   02. My Portfolio of Innovation
                 </h3>
@@ -59,7 +59,7 @@ const Service = () => {
             </HoverBorder>
 
             <HoverBorder>
-              <div className="bg-gray-100 dark:bg-black rounded-2xl p-6 sm:p-8 transition-all duration-200">
+              <div className="bg-gray-100 dark:bg-[#141414] rounded-2xl p-6 sm:p-8 transition-all duration-200">
                 <h3 className="text-base sm:text-lg font-bold text-gray-900 dark:text-white">
                   03. A Showcase of My Projects
                 </h3>

@@ -1,14 +1,14 @@
-@import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
 
-@layer utilities{
-  .container{
+@layer utilities {
+  .container {
     @apply max-w-[1290px] mx-auto;
   }
 }
 
 @theme {
-  --font-rajdhani: "Rajdhani", sans-serif;
+  --default-font-family: "Rajdhani", sans-serif;
 }
 
 .outline-title {
@@ -18,6 +18,7 @@
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
+
 .outline-title-two {
   color: rgba(0, 0, 0, 0);
   -webkit-text-stroke: 1px rgb(209, 46, 46);
@@ -27,4 +28,3 @@
 }
 
 @custom-variant dark (&:where(.dark, .dark *));
-

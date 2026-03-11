@@ -18,7 +18,7 @@ const Plans = () => {
     "before:opacity-0 hover:before:opacity-100 before:transition-opacity before:duration-500";
 
   const innerCard =
-    "relative z-10 rounded-2xl dark:border-1 dark:border-[#313030] bg-neutral-100 dark:bg-black p-8 flex flex-col justify-between";
+    "relative z-10 rounded-2xl bg-neutral-100 dark:bg-[#141414] p-8 flex flex-col justify-between";
 
   return (
     <div className="py-16 px-4">
@@ -60,7 +60,7 @@ const Plans = () => {
                 <h1 className="text-4xl font-bold">$ 5.00</h1>
                 <p className="mb-6">Per Month</p>
 
-                <ul className="space-y-3">
+                <ul className="space-y-4">
                   <li className="flex items-center gap-2">
                     <CircleCheck size={18} className="text-red-600" />
                     <span>5 Social Media Account</span>
@@ -93,13 +93,13 @@ const Plans = () => {
             viewport={{ once: true }}
             className={cardClass}
           >
-            <div className={innerCard + " py-16 shadow-xl"}>
+            <div className={innerCard + " py-10 shadow-xl"}>
               <div>
                 <h3 className="text-lg font-semibold mb-4">Basic</h3>
                 <h1 className="text-4xl font-bold">$ 230.00</h1>
                 <p className="mb-6">Per Month</p>
 
-                <ul className="space-y-3">
+                <ul className="space-y-4">
                   <li className="flex items-center gap-2">
                     <CircleCheck size={18} className="text-red-600" />
                     <span>5 Social Media Account</span>
@@ -148,7 +148,7 @@ const Plans = () => {
                 <h1 className="text-4xl font-bold">$ 45.00</h1>
                 <p className="mb-6">Per Month</p>
 
-                <ul className="space-y-3">
+                <ul className="space-y-4">
                   <li className="flex items-center gap-2">
                     <CircleCheck size={18} className="text-red-600" />
                     <span>5 Social Media Account</span>

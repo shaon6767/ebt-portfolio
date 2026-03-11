@@ -194,12 +194,12 @@ const Blog = () => {
               <img src={one} alt="" />
 
               <div className="absolute top-3 left-3 flex items-center gap-4 bg-white px-4 py-2 rounded-full text-xs shadow">
-                <span className="flex items-center gap-1">
+                <span className="flex items-center gap-1 dark:text-black font-semibold">
                   <FiUser size={14} />
                   Mesbah
                 </span>
 
-                <span className="flex items-center gap-1">
+                <span className="flex items-center gap-1 dark:text-black font-semibold">
                   <FiCalendar size={14} />
                   April 10
                 </span>
@@ -227,12 +227,12 @@ const Blog = () => {
               <img src={two} alt="" />
 
               <div className="absolute top-3 left-3 flex items-center gap-4 bg-white px-4 py-2 rounded-full text-xs shadow">
-                <span className="flex items-center gap-1">
+                <span className="flex items-center gap-1 dark:text-black font-semibold">
                   <FiUser size={14} />
                   Mesbah
                 </span>
 
-                <span className="flex items-center gap-1">
+                <span className="flex items-center gap-1 dark:text-black font-semibold">
                   <FiCalendar size={14} />
                   April 10
                 </span>
@@ -260,12 +260,12 @@ const Blog = () => {
               <img src={three} alt="" />
 
               <div className="absolute top-3 left-3 flex items-center gap-4 bg-white px-4 py-2 rounded-full text-xs shadow">
-                <span className="flex items-center gap-1">
+                <span className="flex items-center gap-1 dark:text-black font-semibold">
                   <FiUser size={14} />
                   Mesbah
                 </span>
 
-                <span className="flex items-center gap-1">
+                <span className="flex items-center gap-1 dark:text-black font-semibold">
                   <FiCalendar size={14} />
                   April 10
                 </span>

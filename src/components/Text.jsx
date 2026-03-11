@@ -5,7 +5,7 @@ const Text = () => {
     className="absolute" 
     style={{ 
       bottom: '-90px', 
-      left: '250px',
+      left: '380px',
       zIndex: 9999 
     }}
   >

@@ -43,7 +43,7 @@ const Projects = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
 
           <HoverBorder>
-            <div className="bg-gray-100 dark:bg-black rounded-2xl p-6 md:p-9 transition-all ease-in-out duration-200">
+            <div className="bg-gray-100 dark:bg-[#141414] rounded-2xl p-6 md:p-9 transition-all ease-in-out duration-200">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
                 <CountUp end={20} duration={1.8} enableScrollSpy scrollSpyOnce />K+
               </h2>
@@ -54,7 +54,7 @@ const Projects = () => {
           </HoverBorder>
 
           <HoverBorder>
-            <div className="bg-gray-100 dark:bg-black rounded-2xl p-6 md:p-9 transition-all ease-in-out duration-200">
+            <div className="bg-gray-100 dark:bg-[#141414] rounded-2xl p-6 md:p-9 transition-all ease-in-out duration-200">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
                 <CountUp end={10} duration={1.8} enableScrollSpy scrollSpyOnce />K+
               </h2>
@@ -65,7 +65,7 @@ const Projects = () => {
           </HoverBorder>
 
           <HoverBorder>
-            <div className="bg-gray-100 dark:bg-black rounded-2xl p-6 md:p-9 transition-all ease-in-out duration-200">
+            <div className="bg-gray-100 dark:bg-[#141414] rounded-2xl p-6 md:p-9 transition-all ease-in-out duration-200">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
                 <CountUp end={200} duration={1.8} enableScrollSpy scrollSpyOnce />+
               </h2>
@@ -76,7 +76,7 @@ const Projects = () => {
           </HoverBorder>
 
           <HoverBorder>
-            <div className="bg-gray-100 dark:bg-black rounded-2xl p-6 md:p-9 transition-all ease-in-out duration-200">
+            <div className="bg-gray-100 dark:bg-[#141414] rounded-2xl p-6 md:p-9 transition-all ease-in-out duration-200">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
                 <CountUp
                   end={1000}

@@ -46,9 +46,9 @@ const Banner = () => {
           <div className="col-span-3">
             <div className="flex justify-center items-center h-full">
               <img src={ban} alt="" className='max-w-full h-auto object-contain z-30' />
-              <div className="absolute bottom-[-20px] transform -translate-x-[-25px] hidden lg:block">
+              <div className="absolute bottom-[-20px] transform -translate-x-[-45px] hidden lg:block">
                 <div>
-                  <h1 className="outline-title text-white dark:text-white pb-2 text-[160px] font-bold text-center -z-10">
+                  <h1 className="outline-title text-white dark:text-white pb-2 text-[180px] font-bold text-center -z-10">
                     WEB DESIGN
                   </h1>
                 </div>
@@ -141,7 +141,7 @@ const Banner = () => {
       )}
 
 
-      <div className={`fixed top-0 right-0 h-full w-[320px] overflow-scroll font-rajdhani bg-neutral-100 dark:bg-black shadow-2xl z-50 transition-transform duration-300 ${openSidebar ? "translate-x-0" : "translate-x-full"}`}>
+      <div className={`fixed top-0 right-0 h-full w-[320px] overflow-hidden font-rajdhani bg-neutral-100 dark:bg-black shadow-2xl z-50 transition-transform duration-300 ${openSidebar ? "translate-x-0" : "translate-x-full"}`}>
 
         <div className="flex justify-between items-center p-5 bg-neutral-200 dark:bg-black">
           <div>
