@@ -20,7 +20,7 @@ const Footer = () => {
             <img src={logo} alt="logo" className="w-32 block dark:hidden relative z-10" />
             <img src={dark} alt="logo" className="w-32 hidden dark:block relative z-10" />
             <div className="absolute left-[-40px] md:left-[-80px] lg:left-[-150px] top-[-60px] hidden dark:block ">
-              <img src={ftr} alt="" className="w-90 h-90 pointer-events-none" />
+              <img src={ftr} alt="" className="w-90 h-90 pointer-events-none animate-[spin_20s_linear_infinite]" />
             </div>
           </div>
 
@@ -32,7 +32,9 @@ const Footer = () => {
             <input
               type="email"
               placeholder="Email Address"
-              className="bg-transparent outline-none dark:text-white flex-1 text-sm"
+              className="bg-transparent outline-none flex-1 text-sm
+             text-neutral-900 dark:text-white
+             placeholder:text-neutral-600 dark:placeholder:text-neutral-500"
             />
             <Mail size={18} className="cursor-pointer" />
           </div>
@@ -55,15 +57,15 @@ const Footer = () => {
           <h3 className="font-semibold text-lg mb-6">Contact</h3>
           <div className="space-y-4 text-sm">
             <div className="flex items-center gap-3">
-              <IoMdMail  size={34} className=" p-2 bg-none border-2 border-[#d5cfcf] rounded-full"/>
+              <IoMdMail size={34} className=" p-2 bg-none border-2 border-[#d5cfcf] rounded-full" />
               <p className="break-all">nafiiz125@gmail.com</p>
             </div>
             <div className="flex items-center gap-3">
-              <MdLocationOn  size={34} className=" p-2 bg-none border-2 border-[#d5cfcf] rounded-full"/>
+              <MdLocationOn size={34} className=" p-2 bg-none border-2 border-[#d5cfcf] rounded-full" />
               <p>3891 Ranchview Dr. Richardson</p>
             </div>
             <div className="flex items-center gap-3">
-              <MdCall  size={34} className=" p-2 bg-none border-2 border-[#d5cfcf] rounded-full"/>
+              <MdCall size={34} className=" p-2 bg-none border-2 border-[#d5cfcf] rounded-full" />
               <p>01245789321</p>
             </div>
           </div>
@@ -80,10 +82,10 @@ const Footer = () => {
 
 
       <div className="max-w-7xl mx-auto mt-20 pt-4 border-t border-gray-300 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500 gap-4">
-        <p className="text-center md:text-left">
+        <p className="text-center md:text-left mt-0 mt-4">
           © InversWeb 2026 | All Rights Reserved
         </p>
-        <div className="flex flex-wrap justify-center md:justify-end gap-4">
+        <div className="flex flex-wrap justify-center md:justify-end gap-4 mt-0 md:mt-4">
           <p className="cursor-pointer hover:text-black">Terms & Condition</p>
           <p className="cursor-pointer hover:text-black">Privacy Policy</p>
           <p className="cursor-pointer hover:text-black">Contact Us</p>

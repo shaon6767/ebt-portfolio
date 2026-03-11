@@ -48,7 +48,7 @@ const Navbar = () => {
   ];
 
   return (
-    <section className="py-4 bg-[#F4F4F4] dark:bg-black relative z-50">
+    <section className="py-4 bg-[#F4F4F4] dark:bg-black relative z-50 sm:px-6 md:px-12 lg:px-16">
       <div className="max-w-7xl px-4 mx-auto">
 
         <div className="hidden md:grid grid-cols-5 items-center">
@@ -105,22 +105,22 @@ const Navbar = () => {
 
               <IoLogoInstagram 
                 size={42}
-                className="p-3 bg-gray-200 dark:bg-gray-700 rounded-full text-gray-800 dark:text-white hover:bg-red-500 hover:text-white transition-all cursor-pointer"
+                className="p-3 bg-gray-200 dark:bg-gray-700 rounded-full text-gray-800 dark:text-white hover:bg-red-500 hover:text-white transition-all cursor-pointer hidden lg:block"
               />
 
               <LiaLinkedinIn
                 size={42}
-                className="p-3 bg-gray-200 dark:bg-gray-700 rounded-full text-gray-800 dark:text-white hover:bg-red-500 hover:text-white transition-all cursor-pointer"
+                className="p-3 bg-gray-200 dark:bg-gray-700 rounded-full text-gray-800 dark:text-white hover:bg-red-500 hover:text-white transition-all cursor-pointer hidden lg:block"
               />
 
               <VscTwitter 
                 size={42}
-                className="p-3 bg-gray-200 dark:bg-gray-700 rounded-full text-gray-800 dark:text-white hover:bg-red-500 hover:text-white transition-all cursor-pointer"
+                className="p-3 bg-gray-200 dark:bg-gray-700 rounded-full text-gray-800 dark:text-white hover:bg-red-500 hover:text-white transition-all cursor-pointer hidden lg:block"
               />
 
               <GrFacebookOption 
                 size={42}
-                className="p-3 bg-gray-200 dark:bg-gray-700 rounded-full text-gray-800 dark:text-white hover:bg-red-500 hover:text-white transition-all cursor-pointer"
+                className="p-3 bg-gray-200 dark:bg-gray-700 rounded-full text-gray-800 dark:text-white hover:bg-red-500 hover:text-white transition-all cursor-pointer hidden lg:block"
               />
 
               <button

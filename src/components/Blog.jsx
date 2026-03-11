@@ -81,7 +81,7 @@ const Blog = () => {
 
                 <img src={test} alt="" />
 
-                <p className="leading-[30px] w-[420px] text-gray-600">
+                <p className="leading-[30px] lg:w-[420px] text-gray-600">
                   A personal portfolio is a curated collection of an individual's
                   professional work, showcasing their skilA personal portfolio is a
                   curated collection of an individual's professional work,
@@ -102,7 +102,7 @@ const Blog = () => {
 
                 <img src={test} alt="" />
 
-                <p className="leading-[30px] w-[420px] text-gray-600">
+                <p className="leading-[30px] lg:w-[420px] text-gray-600">
                   A personal portfolio is a curated collection of an individual's
                   professional work, showcasing their skilA personal portfolio is a
                   curated collection of an individual's professional work,
@@ -124,7 +124,7 @@ const Blog = () => {
 
                 <img src={test} alt="" />
 
-                <p className="leading-[30px] w-[420px] text-gray-600">
+                <p className="leading-[30px] lg:w-[420px] text-gray-600">
                   A personal portfolio is a curated collection of an individual's
                   professional work, showcasing their skilA personal portfolio is a
                   curated collection of an individual's professional work,
@@ -145,7 +145,7 @@ const Blog = () => {
 
                 <img src={test} alt="" />
 
-                <p className="leading-[30px] w-[420px] text-gray-600">
+                <p className="leading-[30px] lg:w-[420px] text-gray-600">
                   A personal portfolio is a curated collection of an individual's
                   professional work, showcasing their skilA personal portfolio is a
                   curated collection of an individual's professional work,
@@ -186,8 +186,7 @@ const Blog = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
           <motion.div
-            whileHover={{ scale: 1.05 }}
-            className="bg-white dark:bg-[#141414] p-2 rounded-2xl shadow-sm overflow-hidden text-left"
+            className="bg-white dark:bg-[#141414] p-2 rounded-2xl shadow-sm overflow-hidden text-left cursor-pointer"
           >
 
 
@@ -221,8 +220,7 @@ const Blog = () => {
 
 
           <motion.div
-            whileHover={{ scale: 1.05 }}
-            className="bg-white dark:bg-[#141414] p-2 rounded-2xl shadow-sm overflow-hidden text-left"
+            className="bg-white dark:bg-[#141414] p-2 rounded-2xl shadow-sm overflow-hidden text-left cursor-pointer"
           >
 
             <div className="relative">
@@ -255,8 +253,7 @@ const Blog = () => {
 
 
           <motion.div
-            whileHover={{ scale: 1.05 }}
-            className="bg-white dark:bg-[#141414] p-2 rounded-2xl shadow-sm overflow-hidden text-left"
+            className="bg-white dark:bg-[#141414] p-2 rounded-2xl shadow-sm overflow-hidden text-left cursor-pointer"
           >
 
             <div className="relative">

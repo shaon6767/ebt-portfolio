@@ -18,7 +18,7 @@ const Banner = () => {
   const [openSidebar, setOpenSidebar] = useState(false);
 
   return (
-    <section className='dark:bg-black dark:text-white relative overflow-hidden py-10 md:py-0 font-rajdhani'>
+    <section className='dark:bg-black dark:text-white relative overflow-hidden py-10 md:py-0 px-4 sm:px-6 md:px-12 lg:px-16 font-rajdhani'>
 
       <motion.div
         className='max-w-7xl px-4 mx-auto'
@@ -59,21 +59,25 @@ const Banner = () => {
           <div className="col-span-1 mt-[200px] space-y-5">
             <div className="flex flex-col">
               <h3 className='text-lg font-semibold'>About Me</h3>
-              <p className='mt-4 text-sm lg:text-base w-[250px] leading-[30px]'>
+              <p className='mt-4 text-sm lg:text-base lg:w-[250px] hidden lg:block leading-[30px]'>
                 A personal <span className='text-red-600 font-medium'>portfolio</span> is a collection of
                 your work, achievements, and skills that <span className='text-red-600 font-medium'>web design</span> highlights.
+              </p>
+              <p className='mt-4 text-sm lg:text-base lg:hidden leading-[30px]'>
+                A personal <span className='text-red-600 font-medium'>portfolio</span> is a collection of
+                your work
               </p>
             </div>
 
             <div className="space-y-3 lg:space-y-5 mt-0 lg:mt-8">
               <p className='text-sm lg:text-base'>Find me on</p>
 
-              <div className="flex items-center gap-2 lg:gap-3">
+              <div className="flex items-center gap-1 lg:gap-3">
 
-                <IoLogoInstagram size={34} className="p-2 bg-gray-200 dark:bg-gray-700 rounded-full text-gray-800 dark:text-white hover:bg-red-500 hover:text-white transition-all cursor-pointer" />
-                <LiaLinkedinIn size={34} className="p-2 bg-gray-200 dark:bg-gray-700 rounded-full text-gray-800 dark:text-white hover:bg-red-500 hover:text-white transition-all cursor-pointer" />
-                <VscTwitter  size={34} className="p-2 bg-gray-200 dark:bg-gray-700 rounded-full text-gray-800 dark:text-white hover:bg-red-500 hover:text-white transition-all cursor-pointer" />
-                <GrFacebookOption size={34} className="p-2 bg-gray-200 dark:bg-gray-700 rounded-full text-gray-800 dark:text-white hover:bg-red-500 hover:text-white transition-all cursor-pointer" />
+                <IoLogoInstagram size={34} className="p-1 lg:p-2 bg-gray-200 dark:bg-gray-700 rounded-full text-gray-800 dark:text-white hover:bg-red-500 hover:text-white transition-all cursor-pointer" />
+                <LiaLinkedinIn size={34} className="p-1 lg:p-2 bg-gray-200 dark:bg-gray-700 rounded-full text-gray-800 dark:text-white hover:bg-red-500 hover:text-white transition-all cursor-pointer" />
+                <VscTwitter  size={34} className="p-1 lg:p-2 bg-gray-200 dark:bg-gray-700 rounded-full text-gray-800 dark:text-white hover:bg-red-500 hover:text-white transition-all cursor-pointer" />
+                <GrFacebookOption size={34} className="p-1 lg:p-2 bg-gray-200 dark:bg-gray-700 rounded-full text-gray-800 dark:text-white hover:bg-red-500 hover:text-white transition-all cursor-pointer" />
               </div>
             </div>
           </div>

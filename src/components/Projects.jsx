@@ -14,8 +14,7 @@ const Projects = () => {
         viewport={{ once: true }}
       >
 
-        {/* LEFT SIDE */}
-        <div className="bg-gray-100 dark:bg-gradient-to-r from-gray-900 to-red-600 rounded-3xl px-6 sm:px-10 md:px-12 py-8">
+        <div className="bg-gray-100 dark:bg-[radial-gradient(circle_at_110%_120%,_#ff4d4d_0%,_#b91c1c_20%,_#1a0a0a_45%,_#000000_65%)] rounded-3xl px-6 sm:px-10 md:px-12 py-8">
 
           <div className="flex flex-col sm:flex-row sm:items-center gap-6 sm:gap-10">
 
@@ -26,21 +25,21 @@ const Projects = () => {
             </div>
 
             <div>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight dark:text-black">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight dark:text-white">
                 Years Of <br /> Experience
               </h2>
             </div>
 
           </div>
 
-          <p className="mt-6 max-w-[490px] text-gray-600 leading-relaxed text-sm sm:text-base">
+          <p className="mt-6 max-w-[490px] text-gray-600 dark:text-gray-300 leading-relaxed text-sm sm:text-base">
             Business consulting consultants provide expert advice and guida the
             a businesses to help theme their performance efficiency
           </p>
 
         </div>
 
-        {/* RIGHT SIDE CARDS */}
+
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
 
           <HoverBorder>

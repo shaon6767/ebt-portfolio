@@ -18,7 +18,7 @@ const Plans = () => {
     "before:opacity-0 hover:before:opacity-100 before:transition-opacity before:duration-500";
 
   const innerCard =
-    "relative z-10 rounded-2xl bg-neutral-100 dark:bg-black p-8 flex flex-col justify-between";
+    "relative z-10 rounded-2xl dark:border-1 dark:border-[#313030] bg-neutral-100 dark:bg-black p-8 flex flex-col justify-between";
 
   return (
     <div className="py-16 px-4">
@@ -26,7 +26,7 @@ const Plans = () => {
 
         {/* Heading */}
         <motion.div
-          className="text-center mb-12"
+          className="text-center mb-12 "
           initial={{ opacity: 0, y: 60 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -43,7 +43,6 @@ const Plans = () => {
           </h2>
         </motion.div>
 
-        {/* Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 items-center">
 
           {/* Starter */}
