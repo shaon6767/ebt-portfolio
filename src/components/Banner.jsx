@@ -70,7 +70,7 @@ const Banner = () => {
             </div>
 
             <div className="space-y-3 lg:space-y-5 mt-0 lg:mt-8">
-              <p className='text-sm lg:text-base'>Find me on</p>
+              <p className='text-sm font-semibold lg:text-base'>Find me on</p>
 
               <div className="flex items-center gap-1 lg:gap-3">
 
