@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { MoveRight, MessageCircleCheck, X, Phone, Mail, LocateFixed } from 'lucide-react';
+import { MoveRight, MessageCircleCheck, X, Phone, Mail } from 'lucide-react';
+import { IoMdLocate } from "react-icons/io";
+import { MdEmail,MdCall  } from "react-icons/md";
 import { IoLogoInstagram } from "react-icons/io";
 import { GrFacebookOption } from "react-icons/gr";
 import { LiaLinkedinIn } from "react-icons/lia";
@@ -161,35 +163,47 @@ const Banner = () => {
             and user-centric web solutions.
           </p>
 
-          <div className="space-y-3">
+          <div className="space-y-5">
 
             <div className="flex gap-3 items-center">
-              <Phone size={30} className="text-black dark:text-white p-1 border border-[#c9c1c1] rounded-lg" />
+              <MdCall size={42} className="text-black dark:text-white p-2 border border-[#c9c1c1] rounded-lg" />
               <div>
-                <p className="text-xs ">CALL NOW</p>
-                <p className="text-sm font-medium">+92 (8800) - 98670</p>
+                <p className="text-xs text-red-600">CALL NOW</p>
+                <p className="text-sm font-medium mt-1">+92 (8800) - 98670</p>
               </div>
             </div>
 
             <div className="flex gap-3 items-center">
-              <Mail size={30} className="text-black dark:text-white p-1 border border-[#c9c1c1] rounded-lg" />
+              <MdEmail size={42} className="text-black dark:text-white p-2 border border-[#c9c1c1] rounded-lg" />
               <div>
-                <p className="text-xs ">MAIL US</p>
-                <p className="text-sm font-medium">example@info.com</p>
+                <p className="text-xs text-red-600">MAIL US</p>
+                <p className="text-sm font-medium mt-1">example@info.com</p>
               </div>
             </div>
 
             <div className="flex items-center gap-3 ">
-              <LocateFixed size={30} className="text-black dark:text-white p-1 border border-[#c9c1c1] rounded-lg" />
+              <IoMdLocate  size={42} className="text-black dark:text-white p-2 border border-[#c9c1c1] rounded-lg" />
               <div>
-                <p className="text-xs ">MY ADDRESS</p>
-                <p className="text-sm font-medium">66 Brooklyn, New York 3269</p>
+                <p className="text-xs text-red-600">MY ADDRESS</p>
+                <p className="text-sm font-medium mt-1">66 Brooklyn, New York 3269</p>
               </div>
             </div>
 
           </div>
 
+          <div className="space-y-3 pt-2">
+              <p className='text-sm'>FIND WITH ME</p>
+
+              <div className="flex items-center gap-3">
+                <IoLogoInstagram size={38} className="p-2 bg-gray-200 dark:bg-gray-600 rounded-full dark:text-white hover:text-white hover:bg-red-500 dark:hover:bg-gray-500 transition-all cursor-pointer" />
+                <LiaLinkedinIn size={38} className="p-2 bg-gray-200 dark:bg-gray-600 rounded-full dark:text-white hover:text-white hover:bg-red-500 dark:hover:bg-gray-500 transition-all cursor-pointer" />
+                <VscTwitter size={38} className="p-2 bg-gray-200 dark:bg-gray-600 rounded-full dark:text-white hover:text-white hover:bg-red-500 dark:hover:bg-gray-500 transition-all cursor-pointer" />
+                <GrFacebookOption size={38} className="p-2 bg-gray-200 dark:bg-gray-600 rounded-full dark:text-white hover:text-white hover:bg-red-500 dark:hover:bg-gray-500 transition-all cursor-pointer" />
+              </div>
+            </div>
+
         </div>
+
 
       </div>
 

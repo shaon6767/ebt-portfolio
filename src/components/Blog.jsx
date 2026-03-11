@@ -6,14 +6,13 @@ import three from "../assets/blogthree.png"
 import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
-
+import { FiUser, FiCalendar } from "react-icons/fi";
 import "swiper/css";
 
 const Blog = () => {
   return (
     <div className="w-full dark:bg-black py-16 px-6 md:px-16">
 
-      {/* TESTIMONIAL */}
       <motion.div
         className="max-w-7xl mx-auto text-center"
         initial={{ opacity: 0, y: 60 }}
@@ -30,7 +29,6 @@ const Blog = () => {
           Enhancing Collaboration <br className="hidden md:block" /> between Remote
         </h2>
 
-        {/* MOBILE GRID */}
         <div className="grid md:hidden grid-cols-1 gap-8">
 
           <div className="bg-neutral-200 dark:bg-[#141414] p-8 rounded-2xl shadow-sm border-r-2 border-red-500 text-left space-y-12">
@@ -65,7 +63,6 @@ const Blog = () => {
         </div>
 
 
-        {/* DESKTOP SLIDER */}
         <div className="hidden md:block">
 
           <Swiper
@@ -79,7 +76,6 @@ const Blog = () => {
             }}
           >
 
-            {/* Slide 1 */}
             <SwiperSlide>
               <div className="bg-neutral-200 dark:bg-[#141414] p-8 rounded-2xl shadow-sm border-r-2 border-red-500 text-left space-y-12">
 
@@ -101,7 +97,6 @@ const Blog = () => {
             </SwiperSlide>
 
 
-            {/* Slide 2 */}
             <SwiperSlide>
               <div className="bg-neutral-200 dark:bg-[#141414] p-8 rounded-2xl shadow-sm border-r-2 border-red-500 text-left space-y-12">
 
@@ -123,7 +118,7 @@ const Blog = () => {
             </SwiperSlide>
 
 
-            {/* DUPLICATES so slider can move */}
+            {/* slider again*/}
             <SwiperSlide>
               <div className="bg-neutral-200 dark:bg-[#141414] p-8 rounded-2xl shadow-sm border-r-2 border-red-500 text-left space-y-12">
 
@@ -171,8 +166,7 @@ const Blog = () => {
 
       </motion.div>
 
-
-      {/* BLOG SECTION */}
+      {/* Blog */}
       <motion.div
         className="max-w-7xl mx-auto mt-20 text-center"
         initial={{ opacity: 0, y: 60 }}
@@ -196,7 +190,22 @@ const Blog = () => {
             className="bg-white dark:bg-[#141414] p-2 rounded-2xl shadow-sm overflow-hidden text-left"
           >
 
-            <img src={one} alt="" />
+
+            <div className="relative">
+              <img src={one} alt="" />
+
+              <div className="absolute top-3 left-3 flex items-center gap-4 bg-white px-4 py-2 rounded-full text-xs shadow">
+                <span className="flex items-center gap-1">
+                  <FiUser size={14} />
+                  Mesbah
+                </span>
+
+                <span className="flex items-center gap-1">
+                  <FiCalendar size={14} />
+                  April 10
+                </span>
+              </div>
+            </div>
 
             <div className="p-5">
               <p className="font-bold mb-3 w-[280px] leading-7">
@@ -216,7 +225,21 @@ const Blog = () => {
             className="bg-white dark:bg-[#141414] p-2 rounded-2xl shadow-sm overflow-hidden text-left"
           >
 
-            <img src={two} alt="" />
+            <div className="relative">
+              <img src={two} alt="" />
+
+              <div className="absolute top-3 left-3 flex items-center gap-4 bg-white px-4 py-2 rounded-full text-xs shadow">
+                <span className="flex items-center gap-1">
+                  <FiUser size={14} />
+                  Mesbah
+                </span>
+
+                <span className="flex items-center gap-1">
+                  <FiCalendar size={14} />
+                  April 10
+                </span>
+              </div>
+            </div>
 
             <div className="p-5">
               <p className="font-bold mb-3 w-[275px] leading-7">
@@ -236,7 +259,21 @@ const Blog = () => {
             className="bg-white dark:bg-[#141414] p-2 rounded-2xl shadow-sm overflow-hidden text-left"
           >
 
-            <img src={three} alt="" />
+            <div className="relative">
+              <img src={three} alt="" />
+
+              <div className="absolute top-3 left-3 flex items-center gap-4 bg-white px-4 py-2 rounded-full text-xs shadow">
+                <span className="flex items-center gap-1">
+                  <FiUser size={14} />
+                  Mesbah
+                </span>
+
+                <span className="flex items-center gap-1">
+                  <FiCalendar size={14} />
+                  April 10
+                </span>
+              </div>
+            </div>
 
             <div className="p-5">
               <p className="font-bold mb-3 w-[275px] leading-7">

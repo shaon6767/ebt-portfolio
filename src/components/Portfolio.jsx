@@ -3,7 +3,7 @@ import one from "../assets/prpOne.png"
 import two from "../assets/prptwo.png"
 import three from "../assets/prpthree.png"
 import four from "../assets/prpfour.png"
-import { MoveUpRight } from 'lucide-react';
+import { MdArrowOutward } from "react-icons/md";
 
 const Portfolio = () => {
     return (
@@ -36,9 +36,9 @@ const Portfolio = () => {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-10 space-y-6 lg:space-y-16">
                         <div className="">
-                            <div className="bg-gray-100 rounded-2xl p-6 border-2 border-[#d1cece]">
+                            <div className="bg-gray-100 rounded-xl p-4 border-2 border-[#d1cece]">
                                 <div className="rounded-xl overflow-hidden">
-                                    <img src={one} alt="" />
+                                    <img src={one} alt="" className="block w-full" />
                                 </div>
                             </div>
                             <div className="flex justify-between items-center mt-6">
@@ -46,22 +46,22 @@ const Portfolio = () => {
                                     <h3 className="text-lg font-semibold ">
                                         My Journey as a Creator
                                     </h3>
-                                    <p className="text-sm mt-1">
+                                    <p className="text-sm mt-1 text-gray-600">
                                         Development Coaches
                                     </p>
                                 </div>
 
-                                <button className="p-3 border-2 border-[#ddd7d7] rounded-lg hover:bg-red-500 hover:text-white cursor-pointer transition-all duration-150 ease-in-out">
-                                    <MoveUpRight size={15}/>
+                                <button className="p-2 border-2 border-[#ddd7d7] rounded-lg hover:bg-red-500 hover:text-white cursor-pointer transition-all duration-150 ease-in-out">
+                                    <MdArrowOutward size={18} />
                                 </button>
                             </div>
                         </div>
 
 
                         <div className="">
-                            <div className="bg-gray-100 rounded-2xl p-6 border-2 border-[#d1cece] md:mt-18">
+                            <div className="bg-gray-100 rounded-2xl p-4 border-2 border-[#d1cece] md:mt-18">
                                 <div className="rounded-xl overflow-hidden">
-                                    <img src={two} alt="" />
+                                    <img src={two} alt="" className="block w-full" />
                                 </div>
                             </div>
                             <div className="flex justify-between items-center mt-6">
@@ -69,21 +69,21 @@ const Portfolio = () => {
                                     <h3 className="text-lg font-semibold ">
                                         My Professional Portfolio
                                     </h3>
-                                    <p className="text-sm mt-1">
+                                    <p className="text-sm mt-1 text-gray-600">
                                         Development Coaches
                                     </p>
                                 </div>
 
-                                <button className="p-3 border-2 border-[#ddd7d7] rounded-lg hover:bg-red-500 hover:text-white cursor-pointer transition-all duration-150 ease-in-out">
-                                    <MoveUpRight size={15}/>
+                                <button className="p-2 border-2 border-[#ddd7d7] rounded-lg hover:bg-red-500 hover:text-white cursor-pointer transition-all duration-150 ease-in-out">
+                                    <MdArrowOutward size={18} />
                                 </button>
                             </div>
                         </div>
 
                         <div className="">
-                            <div className="bg-gray-100 rounded-2xl p-6 border-2 border-[#d1cece] md:-mt-18">
+                            <div className="bg-gray-100 rounded-2xl p-4 border-2 border-[#d1cece] md:-mt-18">
                                 <div className="rounded-xl overflow-hidden">
-                                    <img src={three} alt="" />
+                                    <img src={three} alt="" className="block w-full" />
                                 </div>
                             </div>
 
@@ -92,22 +92,21 @@ const Portfolio = () => {
                                     <h3 className="text-lg font-semibold ">
                                         My Portfolio of Innovation
                                     </h3>
-                                    <p className="text-sm mt-1">
+                                    <p className="text-sm mt-1 text-gray-600">
                                         App Development
                                     </p>
                                 </div>
-
-                                <button className="p-3 border-2 border-[#ddd7d7] rounded-lg hover:bg-red-500 hover:text-white cursor-pointer transition-all duration-150 ease-in-out">
-                                    <MoveUpRight size={15}/>
+                                <button className="p-2 border-2 border-[#ddd7d7] rounded-lg hover:bg-red-500 hover:text-white cursor-pointer transition-all duration-150 ease-in-out">
+                                    <MdArrowOutward size={18} />
                                 </button>
                             </div>
                         </div>
 
 
                         <div className="">
-                            <div className="bg-gray-100 rounded-2xl p-6 border-2 border-[#d1cece]">
+                            <div className="bg-gray-100 rounded-2xl p-4 border-2 border-[#d1cece]">
                                 <div className="rounded-xl overflow-hidden">
-                                    <img src={four} alt="" />
+                                    <img src={four} alt="" className="block w-full" />
                                 </div>
                             </div>
 
@@ -116,13 +115,13 @@ const Portfolio = () => {
                                     <h3 className="text-lg font-semibold ">
                                         A Portfolio of Creativity and Passion
                                     </h3>
-                                    <p className="text-sm mt-1">
+                                    <p className="text-sm mt-1 text-gray-600">
                                         Business Development
                                     </p>
                                 </div>
 
-                                <button className="p-3 border-2 border-[#ddd7d7] rounded-lg hover:bg-red-500 hover:text-white cursor-pointer transition-all duration-150 ease-in-out">
-                                    <MoveUpRight size={15}/>
+                                <button className="p-2 border-2 border-[#ddd7d7] rounded-lg hover:bg-red-500 hover:text-white cursor-pointer transition-all duration-150 ease-in-out">
+                                    <MdArrowOutward size={18} />
                                 </button>
                             </div>
                         </div>
