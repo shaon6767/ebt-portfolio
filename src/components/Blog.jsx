@@ -207,11 +207,11 @@ const Blog = () => {
             </div>
 
             <div className="p-5">
-              <p className="font-bold mb-3 w-[280px] leading-7">
+              <p className="font-bold mb-3 w-[280px] leading-7 text-xl">
                 Let's bring your ideas to life! Contact me, and let's
               </p>
 
-              <p className="text-xs flex items-center text-gray-500 gap-1 cursor-pointer">
+              <p className="text-sm flex items-center text-gray-500 gap-1 cursor-pointer">
                 READ MORE <ChevronRight size={16} />
               </p>
             </div>
@@ -240,11 +240,11 @@ const Blog = () => {
             </div>
 
             <div className="p-5">
-              <p className="font-bold mb-3 w-[275px] leading-7">
+              <p className="font-bold mb-3 w-[275px] leading-7 text-xl">
                 Inspiring the World, One Project at a Time for the
               </p>
 
-              <p className="text-xs flex items-center text-gray-500 gap-1 cursor-pointer">
+              <p className="text-sm flex items-center text-gray-500 gap-1 cursor-pointer">
                 READ MORE <ChevronRight size={16} />
               </p>
             </div>
@@ -273,11 +273,11 @@ const Blog = () => {
             </div>
 
             <div className="p-5">
-              <p className="font-bold mb-3 w-[275px] leading-7">
+              <p className="font-bold mb-3 w-[275px] leading-7 text-xl">
                 Each one showcases my approach and dedication
               </p>
 
-              <p className="text-xs flex items-center text-gray-500 gap-1 cursor-pointer">
+              <p className="text-sm flex items-center text-gray-500 gap-1 cursor-pointer">
                 READ MORE <ChevronRight size={16} />
               </p>
             </div>

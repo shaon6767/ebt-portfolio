@@ -28,7 +28,7 @@ const SkillsSection = () => {
           <div className="flex flex-col">
 
             {/* Item 1 */}
-            <div className="grid grid-cols-1 md:grid-cols-8 items-center gap-6 p-10 bg-neutral-200 dark:bg-black hover:bg-red-500 shadow-lg transition-all ease-in-out cursor-pointer duration-150 dark:border-b-1 dark:border-b-[white]">
+            <div className="grid grid-cols-1 md:grid-cols-8 items-center gap-6 p-10 dark:bg-black hover:bg-red-500 transition-all ease-in-out cursor-pointer duration-150 dark:border-b-1 dark:border-b-[white]">
               <div className="col-span-1 flex justify-center">
                 <img src={house} alt="" className="block dark:hidden"/>
                 <img src={darkh} alt="" className="hidden dark:block"/>
@@ -55,7 +55,7 @@ const SkillsSection = () => {
             </div>
 
             {/* Item 2 */}
-            <div className="grid grid-cols-1 md:grid-cols-8 items-center gap-6 p-10 bg-neutral-200 dark:bg-black hover:bg-red-500 shadow-lg transition-all ease-in-out cursor-pointer duration-150 dark:border-b-1 dark:border-b-[white]">
+            <div className="grid grid-cols-1 md:grid-cols-8 items-center gap-6 p-10 dark:bg-black hover:bg-red-500 transition-all ease-in-out cursor-pointer duration-150 dark:border-b-1 dark:border-b-[white]">
               <div className="col-span-1 flex justify-center">
                 <img src={cal} alt="" className="block dark:hidden"/>
                 <img src={darkc} alt="" className="hidden dark:block"/>
@@ -82,7 +82,7 @@ const SkillsSection = () => {
             </div>
 
             {/* Item 3 */}
-            <div className="grid grid-cols-1 md:grid-cols-8 items-center gap-6 p-10 bg-neutral-200 dark:bg-black hover:bg-red-500 shadow-lg transition-all ease-in-out cursor-pointer duration-150 dark:border-b-1 dark:border-b-[white]">
+            <div className="grid grid-cols-1 md:grid-cols-8 items-center gap-6 p-10 dark:bg-black hover:bg-red-500 transition-all ease-in-out cursor-pointer duration-150 dark:border-b-1 dark:border-b-[white]">
               <div className="col-span-1 flex justify-center">
                 <img src={pen} alt="" className="block dark:hidden"/>
                 <img src={darkp} alt="" className="hidden dark:block"/>

@@ -58,22 +58,22 @@ const Plans = () => {
               <div>
                 <h3 className="text-lg font-semibold mb-4">Starter</h3>
                 <h1 className="text-4xl font-bold">$ 5.00</h1>
-                <p className="mb-6">Per Month</p>
+                <p className="mb-6 font-semibold">Per Month</p>
 
                 <ul className="space-y-4">
                   <li className="flex items-center gap-2">
                     <CircleCheck size={18} className="text-red-600" />
-                    <span>5 Social Media Account</span>
+                    <span className="text-[#5D6570]">5 Social Media Account</span>
                   </li>
 
                   <li className="flex items-center gap-2">
                     <CircleCheck size={18} className="text-red-600" />
-                    <span>Free Platform Access</span>
+                    <span className="text-[#5D6570]">Free Platform Access</span>
                   </li>
 
                   <li className="flex items-center gap-2">
                     <CircleCheck size={18} className="text-red-600" />
-                    <span>24/7 Customer Support</span>
+                    <span className="text-[#5D6570]">24/7 Customer Support</span>
                   </li>
                 </ul>
               </div>
@@ -93,36 +93,36 @@ const Plans = () => {
             viewport={{ once: true }}
             className={cardClass}
           >
-            <div className={innerCard + " py-10 shadow-xl"}>
+            <div className={innerCard + "py-9"}>
               <div>
                 <h3 className="text-lg font-semibold mb-4">Basic</h3>
                 <h1 className="text-4xl font-bold">$ 230.00</h1>
-                <p className="mb-6">Per Month</p>
+                <p className="mb-6 font-semibold">Per Month</p>
 
                 <ul className="space-y-4">
                   <li className="flex items-center gap-2">
                     <CircleCheck size={18} className="text-red-600" />
-                    <span>5 Social Media Account</span>
+                    <span className="text-[#5D6570]">5 Social Media Account</span>
                   </li>
 
                   <li className="flex items-center gap-2">
                     <CircleCheck size={18} className="text-red-600" />
-                    <span>Free Platform Access</span>
+                    <span className="text-[#5D6570]">Free Platform Access</span>
                   </li>
 
                   <li className="flex items-center gap-2">
                     <CircleCheck size={18} className="text-red-600" />
-                    <span>Marketing Platform</span>
+                    <span className="text-[#5D6570]">Marketing Platform</span>
                   </li>
 
                   <li className="flex items-center gap-2">
                     <CircleCheck size={18} className="text-red-600" />
-                    <span>24/7 Customer Support</span>
+                    <span className="text-[#5D6570]">24/7 Customer Support</span>
                   </li>
 
                   <li className="flex items-center gap-2">
                     <CircleCheck size={18} className="text-red-600" />
-                    <span>Lifetime Support</span>
+                    <span className="text-[#5D6570]">Lifetime Support</span>
                   </li>
                 </ul>
               </div>
@@ -146,22 +146,22 @@ const Plans = () => {
               <div>
                 <h3 className="text-lg font-semibold mb-4">Premium</h3>
                 <h1 className="text-4xl font-bold">$ 45.00</h1>
-                <p className="mb-6">Per Month</p>
+                <p className="mb-6 font-semibold">Per Month</p>
 
                 <ul className="space-y-4">
                   <li className="flex items-center gap-2">
                     <CircleCheck size={18} className="text-red-600" />
-                    <span>5 Social Media Account</span>
+                    <span className="text-[#5D6570]">5 Social Media Account</span>
                   </li>
 
                   <li className="flex items-center gap-2">
                     <CircleCheck size={18} className="text-red-600" />
-                    <span>Free Platform Access</span>
+                    <span className="text-[#5D6570]">Free Platform Access</span>
                   </li>
 
                   <li className="flex items-center gap-2">
                     <CircleCheck size={18} className="text-red-600" />
-                    <span>24/7 Customer Support</span>
+                    <span className="text-[#5D6570]">24/7 Customer Support</span>
                   </li>
                 </ul>
               </div>
